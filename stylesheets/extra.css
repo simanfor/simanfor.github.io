@@ -126,3 +126,59 @@ code {
   color: #212c36 !important; /* Dark slate text */
 }
 
+/* ==============================================================================
+ * Review Status Banners
+ * ============================================================================== */
+.review-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  line-height: 1.4;
+}
+
+.review-banner svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Validated by Third Party state (Moss Green accent) */
+.review-banner--peer {
+  background-color: rgba(145, 180, 80, 0.1);
+  border-color: rgba(145, 180, 80, 0.3);
+  color: var(--md-primary-fg-color--dark);
+}
+[data-md-color-scheme="slate"] .review-banner--peer {
+  background-color: rgba(145, 180, 80, 0.08);
+  border-color: rgba(145, 180, 80, 0.2);
+  color: #91b450;
+}
+
+/* Reviewed by Author state (Amber/Orange accent) */
+.review-banner--author {
+  background-color: rgba(255, 152, 0, 0.1);
+  border-color: rgba(255, 152, 0, 0.3);
+  color: #e65100;
+}
+[data-md-color-scheme="slate"] .review-banner--author {
+  background-color: rgba(255, 152, 0, 0.08);
+  border-color: rgba(255, 152, 0, 0.2);
+  color: #ffb74d;
+}
+
+/* Draft / Unreviewed state (Crimson Red) */
+.review-banner--draft {
+  background-color: rgba(252, 75, 108, 0.08);
+  border-color: rgba(252, 75, 108, 0.25);
+  color: #fc4b6c;
+}
+[data-md-color-scheme="slate"] .review-banner--draft {
+  background-color: rgba(252, 75, 108, 0.06);
+  border-color: rgba(252, 75, 108, 0.15);
+  color: #ff7b93;
+}
