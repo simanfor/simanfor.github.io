@@ -19,6 +19,10 @@
   /* Custom background overrides */
   --md-footer-bg-color:         #2f3d4a; /* Slate Blue */
   --md-footer-bg-color--dark:   #212c36;
+
+  /* Code blocks custom background (soft moss green) */
+  --md-code-bg-color:           #f4f8ed;
+  --md-code-fg-color:           #2e3d30;
 }
 
 /* Dark Theme Color Palette Override (Slate Scheme) */
@@ -28,6 +32,10 @@
   --md-primary-fg-color--dark:  #212c36; /* Deep Slate */
   --md-accent-fg-color:         #91b450; /* Moss Green Accent */
   --md-accent-fg-color--transparent: rgba(145, 180, 80, 0.1);
+
+  /* Code blocks custom background (dark forest green) */
+  --md-code-bg-color:           #1b241a;
+  --md-code-fg-color:           #e2ecd5;
 }
 
 /* Custom visual refinements to match simanfor.es */
@@ -61,17 +69,19 @@ html {
   font-weight: 700 !important;
 }
 
-/* Inline code styling to match simanfor.es pinkish highlights */
-code {
-  color: #fc4b6c !important;
-  background-color: #f9e7eb !important;
+/* Inline code styling to match SIMANFOR green branding */
+:not(pre) > code {
+  color: #619450 !important; /* Forest Green */
+  background-color: #f4f8ed !important; /* Soft Moss Green */
   border-radius: 4px;
   padding: 2px 6px;
+  border: 1px solid rgba(97, 148, 80, 0.15);
 }
 
-[data-md-color-scheme="slate"] code {
-  color: #ff7b93 !important;
-  background-color: #3b242a !important;
+[data-md-color-scheme="slate"] :not(pre) > code {
+  color: #91b450 !important; /* Moss Green */
+  background-color: #1b241a !important; /* Dark Forest Green */
+  border: 1px solid rgba(145, 180, 80, 0.15);
 }
 
 /* ==============================================================================
@@ -133,12 +143,12 @@ code {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 16px;
+  padding: 6px 14px;
   border-radius: 6px;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   margin-bottom: 20px;
   border: 1px solid transparent;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .review-banner svg {
