@@ -1,31 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <url>
-        <loc>https://simanfor.github.io/usuario/herramientas/</loc>
-        <lastmod>2026-07-09</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/usuario/herramientas/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/usuario/herramientas/"/>
-    </url>
-    <url>
-        <loc>https://simanfor.github.io/usuario/inicio/</loc>
-        <lastmod>2026-07-09</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/usuario/inicio/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/usuario/inicio/"/>
-    </url>
-    <url>
-        <loc>https://simanfor.github.io/en/usuario/herramientas/</loc>
-        <lastmod>2026-07-09</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/usuario/herramientas/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/usuario/herramientas/"/>
-    </url>
-    <url>
-        <loc>https://simanfor.github.io/en/usuario/inicio/</loc>
-        <lastmod>2026-07-09</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/usuario/inicio/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/usuario/inicio/"/>
-    </url>
 </urlset>
