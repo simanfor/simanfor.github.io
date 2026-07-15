@@ -1,3 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://simanfor.github.io/users/docker/01_introduction/</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/users/docker/01_introduction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/users/docker/01_introduction/"/>
+    </url>
+    <url>
+        <loc>https://simanfor.github.io/users/docker/02_quickstart/</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/users/docker/02_quickstart/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/users/docker/02_quickstart/"/>
+    </url>
+    <url>
+        <loc>https://simanfor.github.io/users/docker/03_volumes/</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/users/docker/03_volumes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/users/docker/03_volumes/"/>
+    </url>
+    <url>
+        <loc>https://simanfor.github.io/users/docker/04_examples/</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/users/docker/04_examples/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/users/docker/04_examples/"/>
+    </url>
+    <url>
+        <loc>https://simanfor.github.io/en/users/docker/01_introduction/</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/users/docker/01_introduction/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/users/docker/01_introduction/"/>
+    </url>
+    <url>
+        <loc>https://simanfor.github.io/en/users/docker/02_quickstart/</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/users/docker/02_quickstart/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/users/docker/02_quickstart/"/>
+    </url>
+    <url>
+        <loc>https://simanfor.github.io/en/users/docker/03_volumes/</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/users/docker/03_volumes/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/users/docker/03_volumes/"/>
+    </url>
+    <url>
+        <loc>https://simanfor.github.io/en/users/docker/04_examples/</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/users/docker/04_examples/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/users/docker/04_examples/"/>
+    </url>
 </urlset>

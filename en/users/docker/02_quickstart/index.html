@@ -8,29 +8,35 @@
       
       
       
+        <link rel="canonical" href="https://simanfor.github.io/en/users/docker/02_quickstart/">
       
+      
+        <link rel="prev" href="../01_introduction/">
+      
+      
+        <link rel="next" href="../03_volumes/">
       
       
         
-          <link rel="alternate" href="/users/docker/04_examples/" hreflang="es">
+          <link rel="alternate" href="../../../../users/docker/02_quickstart/" hreflang="es">
         
-          <link rel="alternate" href="/en/users/docker/04_examples/" hreflang="en">
+          <link rel="alternate" href="./" hreflang="en">
         
       
       
-      <link rel="icon" href="/assets/simanfor_tree.png">
+      <link rel="icon" href="../../../../assets/simanfor_tree.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>SIMANFOR DOCS</title>
+        <title>Obtaining the image and quickstart - SIMANFOR DOCS</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,13 +55,13 @@
       
     
     
-      <link rel="stylesheet" href="/assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="/assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -79,6 +85,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#obtencion-de-la-imagen-y-primer-contacto" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -91,9 +102,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="SIMANFOR DOCS" class="md-header__button md-logo" aria-label="SIMANFOR DOCS" data-md-component="logo">
+    <a href="../../../.." title="SIMANFOR DOCS" class="md-header__button md-logo" aria-label="SIMANFOR DOCS" data-md-component="logo">
       
-  <img src="/assets/simanfor_tree.png" alt="logo">
+  <img src="../../../../assets/simanfor_tree.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -110,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Obtaining the image and quickstart
             
           </span>
         </div>
@@ -121,15 +132,13 @@
   <div class="lang-toggle">
     
       
-        <a href="/users/docker/04_examples/" hreflang="es" class="lang-toggle__item">
+        <a href="../../../../users/docker/02_quickstart/" hreflang="es" class="lang-toggle__item">
           ES
         </a>
       
     
       
-        <a href="/en/users/docker/04_examples/" hreflang="en" class="lang-toggle__item">
-          EN
-        </a>
+        <span class="lang-toggle__item lang-toggle__item--active">EN</span>
       
     
   </div>
@@ -234,9 +243,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="SIMANFOR DOCS" class="md-nav__button md-logo" aria-label="SIMANFOR DOCS" data-md-component="logo">
+    <a href="../../../.." title="SIMANFOR DOCS" class="md-nav__button md-logo" aria-label="SIMANFOR DOCS" data-md-component="logo">
       
-  <img src="/assets/simanfor_tree.png" alt="logo">
+  <img src="../../../../assets/simanfor_tree.png" alt="logo">
 
     </a>
     SIMANFOR DOCS
@@ -248,8 +257,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -260,11 +271,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
@@ -285,7 +296,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -300,6 +311,8 @@
                 
   
   
+    
+  
   
   
     
@@ -309,11 +322,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1_1" id="__nav_1_1_label" tabindex="0">
@@ -334,7 +347,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -352,7 +365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/users/docker/01_introduction/" class="md-nav__link">
+      <a href="../01_introduction/" class="md-nav__link">
         
   
   
@@ -377,10 +390,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/en/users/docker/02_quickstart/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Obtaining the image and quickstart
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -396,6 +436,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descargar-la-imagen-del-simulador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descargar la imagen del simulador
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versiones-y-variantes-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versiones y variantes disponibles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion-de-funcionamiento-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comprobación de funcionamiento inicial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -408,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/users/docker/03_volumes/" class="md-nav__link">
+      <a href="../03_volumes/" class="md-nav__link">
         
   
   
@@ -436,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/users/docker/04_examples/" class="md-nav__link">
+      <a href="../04_examples/" class="md-nav__link">
         
   
   
@@ -489,6 +582,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descargar-la-imagen-del-simulador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descargar la imagen del simulador
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versiones-y-variantes-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versiones y variantes disponibles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion-de-funcionamiento-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comprobación de funcionamiento inicial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -501,7 +637,58 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+  
+  
+  
+                  
+
+
+
+<h1 id="obtencion-de-la-imagen-y-primer-contacto">Obtención de la imagen y primer contacto</h1>
+<p>El simulador oficial de SIMANFOR está disponible públicamente como una imagen en el registro de contenedores de GitHub (GitHub Container Registry). Puedes descargarlo y realizar una prueba rápida de ejecución para comprobar que tu entorno de Docker está listo para trabajar.</p>
+<hr />
+<h2 id="descargar-la-imagen-del-simulador">Descargar la imagen del simulador</h2>
+<p>La imagen estándar y recomendada para la mayoría de usuarios es la que contiene la etiqueta de versión más reciente (<code>latest</code>). Para descargarla en tu equipo, abre la terminal y ejecuta este comando:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>ghcr.io/simanfor-dask/simulator:latest
+</code></pre></div>
+<p>Una vez que termine el proceso de descarga, puedes verificar que la imagen se ha guardado correctamente en tu disco local listando las imágenes disponibles:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>image<span class="w"> </span>ls
+</code></pre></div>
+<p>En la lista resultante deberías ver una línea correspondiente a <code>ghcr.io/simanfor-dask/simulator</code> con el tag <code>latest</code>.</p>
+<hr />
+<h2 id="versiones-y-variantes-disponibles">Versiones y variantes disponibles</h2>
+<p>Aunque la etiqueta <code>:latest</code> apunta siempre a la última versión estable compilada, existen otras opciones disponibles en el registro. Si necesitas utilizar una versión histórica concreta o una rama de desarrollo específica (por ejemplo, para reproducir un estudio científico con la versión exacta con la que se programó), puedes sustituir el tag final del comando.</p>
+<p>Puedes revisar la lista completa de versiones, etiquetas e imágenes en el enlace público de los <a href="https://github.com/orgs/simanfor-dask/packages/container/package/simulator">paquetes de SIMANFOR-Dask en GitHub</a>.</p>
+<p>Para descargar una versión específica (por ejemplo, la <code>v1.0.2</code>), el comando sería:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>ghcr.io/simanfor-dask/simulator:v1.0.2
+</code></pre></div>
+<hr />
+<h2 id="comprobacion-de-funcionamiento-inicial">Comprobación de funcionamiento inicial</h2>
+<p>Para verificar que el contenedor funciona en tu máquina sin errores, puedes lanzar el simulador de manera directa sin pasarle ningún archivo ni parámetro:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>ghcr.io/simanfor-dask/simulator:latest
+</code></pre></div>
+<p>Al ejecutar este comando, el simulador iniciará un escenario de prueba preconfigurado de forma interna dentro del contenedor. En la consola verás los mensajes habituales del proceso de simulación forestal de SIMANFOR.</p>
+<div class="admonition note">
+<p class="admonition-title">Limitación de la prueba inicial</p>
+<p>Este comando ejecuta una simulación interna que sirve únicamente para verificar que el contenedor arranca bien en tu ordenador. Dado que los contenedores son entornos efímeros y aislados, cualquier archivo de resultados que genere esta simulación de prueba se eliminará automáticamente en cuanto termine el proceso.</p>
+</div>
+<p>Para procesar tus propias plantillas de inventario y guardar los resultados en tu disco duro, debes configurar carpetas compartidas. Tienes todos los pasos detallados en la guía de <a href="../03_volumes/">volúmenes y carpetas de trabajo</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
 
               </article>
             </div>
@@ -539,10 +726,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
