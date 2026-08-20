@@ -1,0 +1,2425 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://simanfor.github.io/en/users/models/02_harvest_models/">
+      
+      
+        <link rel="prev" href="../01_index/">
+      
+      
+        <link rel="next" href="../tree/calculate_height_Spain/">
+      
+      
+        
+          <link rel="alternate" href="../../../../users/models/02_harvest_models/" hreflang="es">
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/simanfor_tree.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Harvest models - SIMANFOR DOCS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Poppins";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#harvest-models-and-silvicultural-treatments" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="SIMANFOR DOCS" class="md-header__button md-logo" aria-label="SIMANFOR DOCS" data-md-component="logo">
+      
+  <img src="../../../../assets/simanfor_tree.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SIMANFOR DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Harvest models
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <div class="md-header__option">
+  <div class="lang-toggle">
+    
+      
+        <a href="../../../../users/models/02_harvest_models/" hreflang="es" class="lang-toggle__item">
+          ES
+        </a>
+      
+    
+      
+        <span class="lang-toggle__item lang-toggle__item--active">EN</span>
+      
+    
+  </div>
+</div>
+    
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="SIMANFOR DOCS" class="md-nav__button md-logo" aria-label="SIMANFOR DOCS" data-md-component="logo">
+      
+  <img src="../../../../assets/simanfor_tree.png" alt="logo">
+
+    </a>
+    SIMANFOR DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Users guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Users guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_1" id="__nav_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Docker
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/01_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction and concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/02_quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Obtaining the image and quickstart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/03_volumes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder configuration and execution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/04_examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practical examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Models
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harvest models
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harvest models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#harvest-models-criteria-and-thinning-intensity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Harvest models, criteria and thinning intensity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimum-and-maximum-harvest-age" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minimum and maximum harvest age
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#individual-tree-models-harvests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Individual tree models harvests
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Individual tree models harvests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thinning-from-below" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thinning from below
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thinning-from-above" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thinning from above
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systematic-thinning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Systematic thinning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semi-systematic-thinning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semi-systematic thinning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thinning-from-below-from-above-or-systematic-by-species-mixed-stands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thinning (from below, from above or systematic) by species (mixed stands)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thinning-systematic-or-from-above-with-future-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thinning (systematic or from above) with future trees
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thinning-systematic-or-from-above-with-future-trees-by-species-mixed-stands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thinning (systematic or from above) with future trees by species (mixed stands)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stand-models-harvests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stand models harvests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-scenario-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of scenario parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2_3" id="__nav_1_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Individual-tree models
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Individual-tree models
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/calculate_height_Spain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Height calculation for Spain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/existencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory calculation (Spain)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/IBEROPS_calibrated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPS (calibrated)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/IBEROPS_original/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPS (original)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/IBEROPT_calibrated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPT (calibrated)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/IBEROPT_original/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPT (original)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/mixed_models_Spain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixed stands of Spain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/pure_models_Spain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pure stands of Spain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/Ppinea__and/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PINEA Andalusia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/Ppinea__cat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PINEA en Cataluña
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/Ppinea__sc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PINEA Sistema Central
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/Phalepensis__aragon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus halepensis in Aragon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/Phalepensis__cat_ar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus halepensis in Catalonia and Aragon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/Pnigra__cat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus nigra in Catalonia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/Psylvestris__cat_nat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris Catalonia natural stands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/Psylvestris__cat_plant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris Catalonia plantations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/Qpyrenaica__cyl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus pyrenaica in Castile and Leon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/Qpyrenaica__liferebollo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus pyrenaica in Castile and Leon - LifeRebollo+ Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/RAP_ORGANON/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAP-ORGANON, red alder plantations in Oregon and Washington (USA)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree/SiTree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SiTree - Norway model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2_4" id="__nav_1_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand-level models
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Stand-level models
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Bpubescens_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Betula pubescens in Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Cladanifer_stand__zam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cistus ladanifer in Zamora
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Romania_stand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand models for Romania
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Romania_stand_bau/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand models for Romania (BAU)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Pnigra_stand__CyL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus nigra in Castile and Leon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Ppinaster_at_stand__gal_coast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus pinaster in coastal areas of Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Ppinaster_at_stand__gal_inland/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus pinaster in inland areas of Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Ppinaster_m_stand__iberian_peninsula/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus pinaster mesogeensis in the Iberian Peninsula
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Pradiata_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus radiata in Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Psylvestris_stand__High_Ebro_Basin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris in the High Ebro Basin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Psylvestris_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris in Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Psylvestris_stand__Ukraine/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris in Ukraine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Populus_sp_stand__NE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Populus sp. in Northeast Spain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Qpetraea_stand__ccant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus petraea in the Cantabrian Mountains
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Qrobur_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus robur in Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/RETECHFOR_stand__cyl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RETECHFOR - Castile and Leon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/SILVES_stand__mad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SILVES - Pinus sylvestris in Madrid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/SILVES_stand__si-sc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SILVES - Pinus sylvestris in Iberian System and Central System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stand/Tgrandis_stand__campeche/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tectona grandis in Campeche (Mexico)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../publications/01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#harvest-models-criteria-and-thinning-intensity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Harvest models, criteria and thinning intensity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimum-and-maximum-harvest-age" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minimum and maximum harvest age
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#individual-tree-models-harvests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Individual tree models harvests
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Individual tree models harvests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thinning-from-below" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thinning from below
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thinning-from-above" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thinning from above
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systematic-thinning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Systematic thinning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semi-systematic-thinning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semi-systematic thinning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thinning-from-below-from-above-or-systematic-by-species-mixed-stands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thinning (from below, from above or systematic) by species (mixed stands)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thinning-systematic-or-from-above-with-future-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thinning (systematic or from above) with future trees
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thinning-systematic-or-from-above-with-future-trees-by-species-mixed-stands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thinning (systematic or from above) with future trees by species (mixed stands)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stand-models-harvests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stand models harvests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-scenario-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of scenario parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+  
+  
+                  
+
+
+
+<h1 id="harvest-models-and-silvicultural-treatments">Harvest models and silvicultural treatments</h1>
+<p>SIMANFOR includes a comprehensive suite of harvest and thinning models applicable to both individual-tree projections and stand-level (aggregate) models.</p>
+<p>Silvicultural interventions are defined through the simulator's <strong>Scenarios</strong>, allowing users to evaluate the impacts of varying thinning intensities and regimes on each individual tree, the stand, and all calculated variables.</p>
+<hr />
+<h2 id="harvest-models-criteria-and-thinning-intensity">Harvest models, criteria and thinning intensity</h2>
+<p>Every thinning intervention in SIMANFOR is defined by selecting a <strong>harvest model</strong> (<code>apply thinning</code>), associated with a <strong>thinning criterion</strong> (<code>type</code>) and a <strong>thinning intensity</strong> (<code>percent</code>):</p>
+<p><img alt="Harvest configuration workflow in SIMANFOR" src="../images/harvest/harvest_configuration_workflow.svg" /></p>
+<p><img alt="Harvest configuration in SIMANFOR web interface" src="../../../../users/models/images/harvest/web_harvest_general.png" /></p>
+<ul>
+<li>
+<p><strong>Available harvest models (<code>apply thinning</code>):</strong></p>
+<ul>
+<li><strong>For individual tree models:</strong><ul>
+<li>Thinning from below</li>
+<li>Thinning from above</li>
+<li>Systematic thinning</li>
+<li>Semi-systematic thinning (as a combination of the above, see details in <a href="#semi-systematic-thinning">Semi-systematic thinning</a>)</li>
+<li>Thinning (from below, from above or systematic) by species (mixed stands)</li>
+<li>Thinning (systematic or from above) with future crop trees</li>
+<li>Thinning (systematic or from above) with future crop trees by species (mixed stands)</li>
+</ul>
+</li>
+<li><strong>For stand models:</strong><ul>
+<li>Stand models harvests</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Available thinning criteria (<code>type</code>):</strong></p>
+<ul>
+<li><strong>Density</strong>: Number of trees per hectare (trees/ha).</li>
+<li><strong>Basal area</strong>: Stand basal area (m²/ha).</li>
+<li><strong>Volume</strong>: Over-bark stand volume (m³/ha).</li>
+</ul>
+</li>
+<li>
+<p><strong>Thinning intensity (<code>percent</code>):</strong> Percentage of the selected criterion to be removed during the intervention (value from 0 to 100 %).</p>
+</li>
+</ul>
+<hr />
+<h2 id="minimum-and-maximum-harvest-age">Minimum and maximum harvest age</h2>
+<p>Scenarios allow specifying an age range (<code>min_age</code> and <code>max_age</code>) to execute each harvest. This is particularly useful when simulating an inventory containing plots with different initial ages using the same scenario:</p>
+<ul>
+<li><code>min_age</code>: Minimum stand age required to execute the harvest (years).</li>
+<li><code>max_age</code>: Maximum stand age above which the harvest will not be applied (years).</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Behavior outside the age range</p>
+<p>If a plot's age is not within the range defined by <code>min_age</code> and <code>max_age</code>, the simulator will simply skip that harvest step for that plot and proceed with the rest of the simulation.</p>
+</div>
+<p><img alt="Minimum and maximum harvest age control" src="../../../../users/models/images/harvest/slide_en-16.png" /></p>
+<hr />
+<h2 id="individual-tree-models-harvests">Individual tree models harvests</h2>
+<p>Individual tree harvest models operate by selecting and removing specific trees from the tree list according to their size (based on diameter at breast height <code>dbh</code>) and their species.</p>
+<h3 id="thinning-from-below">Thinning from below</h3>
+<p>Harvesting starts with the trees with the smallest diameter at breast height (<code>dbh</code>) in the plot and progresses upward through larger diameter classes until the target thinning percentage is fulfilled.</p>
+<p><img alt="Thinning from below" src="../../../../users/models/images/harvest/slide_en-04.png" /></p>
+<hr />
+<h3 id="thinning-from-above">Thinning from above</h3>
+<p>Harvesting begins with the largest-diameter trees (<code>dbh</code>) in the plot and descends toward smaller diameter classes until reaching the specified intensity.</p>
+<p><img alt="Thinning from above" src="../../../../users/models/images/harvest/slide_en-05.png" /></p>
+<hr />
+<h3 id="systematic-thinning">Systematic thinning</h3>
+<p>Harvesting is evenly distributed across all diameter classes, reducing the expansion factor (<code>expan</code>) of every tree in the plot by the same proportion.</p>
+<p><img alt="Systematic thinning" src="../../../../users/models/images/harvest/slide_en-07.png" /></p>
+<hr />
+<h3 id="semi-systematic-thinning">Semi-systematic thinning</h3>
+<p>Although not programmed as a separate standalone model in SIMANFOR, it can be simulated by combining systematic and selective thinnings within the same scenario. For example, a semi-systematic thinning with a total intensity of 20 % can be simulated by applying a 10 % systematic thinning (representing line or rack opening) immediately followed by a 10 % thinning from below (representing selection among the remaining trees).</p>
+<hr />
+<h3 id="thinning-from-below-from-above-or-systematic-by-species-mixed-stands">Thinning (from below, from above or systematic) by species (mixed stands)</h3>
+<p><img alt="Thinning by species parameters in web interface" src="../../../../users/models/images/harvest/web_harvest_by_species.png" /></p>
+<p>Allows targeting the harvest on a specific species in mixed stands using the following parameters:</p>
+<ul>
+<li><code>species</code>: Numerical species code according to the National Forest Inventory (IFN / SFNI, see the <a href="../01_index/">model documentation</a>).</li>
+<li><code>volume_target</code>: Reference scope for the thinning intensity percentage:<ul>
+<li><strong>Plot</strong>: The percentage is calculated relative to the total plot accumulation (cutting only trees of the target species).</li>
+<li><strong>Species</strong>: The percentage is calculated strictly relative to the standing stock of that target species within the plot.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Thinning by species configuration" src="../../../../users/models/images/harvest/slide_en-09.png" /></p>
+<p><img alt="Visual scheme of thinning by species in a mixed stand" src="../../../../users/models/images/harvest/slide_en-10.png" /></p>
+<hr />
+<h3 id="thinning-systematic-or-from-above-with-future-trees">Thinning (systematic or from above) with future trees</h3>
+<p><img alt="Thinning with future trees parameters in web interface" src="../../../../users/models/images/harvest/web_harvest_future_trees.png" /></p>
+<ul>
+<li><strong>Additional parameter:</strong> <code>preserve_trees</code> (% of larger trees on which no action is to be taken, default is 15 %).</li>
+<li><strong>Behavior:</strong> A specified upper percentage of dominant or largest trees is protected (<code>preserve_trees</code>). Thinning is then executed immediately on the next largest diameter classes below the protected crop trees.</li>
+</ul>
+<p><img alt="Thinning from above with future trees" src="../../../../users/models/images/harvest/slide_en-06.png" /></p>
+<hr />
+<h3 id="thinning-systematic-or-from-above-with-future-trees-by-species-mixed-stands">Thinning (systematic or from above) with future trees by species (mixed stands)</h3>
+<p><img alt="Thinning with future trees by species parameters in web interface" src="../../../../users/models/images/harvest/web_harvest_future_trees_by_species.png" /></p>
+<p>Combines the capabilities of the preceding thinning types, allowing users to configure target species (<code>species</code>), reference scope (<code>volume_target</code>), and percentage of crop trees to preserve (<code>preserve_trees</code>).</p>
+<hr />
+<h2 id="stand-models-harvests">Stand models harvests</h2>
+<p><img alt="Stand models harvest configuration in web interface" src="../../../../users/models/images/harvest/web_harvest_stand.png" /></p>
+<p>In simulations using aggregate stand models, individual tree lists are not present, so harvests are systematic (with exceptions such as SILVES models, which include specific models to simulate thinnings from below and above). In these models, the configuration is as follows:</p>
+<ul>
+<li><strong>Harvest model:</strong> <code>[masa] Corta sistemática</code> (<code>[stand] Systematic thinning</code>)</li>
+<li><strong>Thinning criterion (<code>type</code>):</strong> <code>densidad</code> (<code>density</code>), <code>area_basimetrica</code> (<code>basal_area</code>) or <code>volumen</code> (<code>volume</code>)</li>
+<li><strong>Thinning intensity (<code>percent</code>):</strong> Percentage to be harvested (0 to 100 %)</li>
+</ul>
+<p><img alt="Stand-level model harvests" src="../../../../users/models/images/harvest/slide_en-11.png" /></p>
+<hr />
+<h2 id="summary-of-scenario-parameters">Summary of scenario parameters</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Allowed values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>type</code></td>
+<td style="text-align: left;">Text / Integer</td>
+<td style="text-align: left;">Thinning criterion</td>
+<td style="text-align: left;"><code>Density</code>, <code>Basal Area</code>, <code>Volume</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>percent</code></td>
+<td style="text-align: left;">Integer</td>
+<td style="text-align: left;">Thinning intensity</td>
+<td style="text-align: left;"><code>0</code> - <code>100</code> (%)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>preserve_trees</code></td>
+<td style="text-align: left;">Integer</td>
+<td style="text-align: left;">Percentage of dominant trees protected</td>
+<td style="text-align: left;"><code>0</code> - <code>100</code> (%)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>species</code></td>
+<td style="text-align: left;">Integer</td>
+<td style="text-align: left;">Target species code (IFN)</td>
+<td style="text-align: left;">IFN code (e.g. <code>21</code>, <code>24</code>, <code>41</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>volume_target</code></td>
+<td style="text-align: left;">Text</td>
+<td style="text-align: left;">Percentage calculation scope</td>
+<td style="text-align: left;"><code>Plot</code> or <code>Species</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>min_age</code></td>
+<td style="text-align: left;">Integer</td>
+<td style="text-align: left;">Minimum stand age to execute harvest</td>
+<td style="text-align: left;">Years (e.g. <code>38</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>max_age</code></td>
+<td style="text-align: left;">Integer</td>
+<td style="text-align: left;">Maximum stand age to execute harvest</td>
+<td style="text-align: left;">Years (e.g. <code>42</code>)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

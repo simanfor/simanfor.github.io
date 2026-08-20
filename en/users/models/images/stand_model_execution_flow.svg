@@ -1,0 +1,154 @@
+<svg viewBox="0 0 780 960" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'Caveat',cursive;">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;display=swap');
+      .txt-title { font-size: 18px; font-weight: 700; }
+      .txt-main { font-size: 16px; font-weight: 600; }
+      .txt-sub { font-size: 14px; font-weight: 500; }
+      .txt-badge { font-size: 15px; font-weight: 700; }
+    </style>
+    <filter id="roughen" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <marker id="arr-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0.5 L9,3.5 L0,6.5" fill="none" stroke="#2563EB" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0.5 L9,3.5 L0,6.5" fill="none" stroke="#16A34A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0.5 L9,3.5 L0,6.5" fill="none" stroke="#7C3AED" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0.5 L9,3.5 L0,6.5" fill="none" stroke="#EA580C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-pink" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0.5 L9,3.5 L0,6.5" fill="none" stroke="#DB2777" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- 1. HEADER -->
+  <g id="header">
+    <text x="390" y="32" text-anchor="middle" fill="#1E293B" class="txt-title" font-size="22">STAND-LEVEL MODEL CALCULATION FLOW</text>
+  </g>
+
+  <!-- 2. START NODE -->
+  <g filter="url(#roughen)" id="start-node">
+    <rect x="280" y="55" width="220" height="42" rx="21" fill="#2563EB15" stroke="#2563EB" stroke-width="2.8" stroke-linecap="round"/>
+  </g>
+  <text x="390" y="76" text-anchor="middle" dominant-baseline="central" fill="#2563EB" class="txt-main">START SIMULATION</text>
+
+  <!-- ARROW 1: START -> READ INPUT -->
+  <path d="M390,98 Q390,118 390,132" fill="none" stroke="#2563EB" stroke-width="2.8" marker-end="url(#arr-blue)" filter="url(#roughen)"/>
+  <circle cx="415" cy="115" r="11" fill="white" stroke="#2563EB" stroke-width="2" filter="url(#roughen)"/>
+  <text x="415" y="115" text-anchor="middle" dominant-baseline="central" fill="#2563EB" class="txt-badge">1</text>
+
+  <!-- 3. READ INPUT -->
+  <g filter="url(#roughen)" id="read-input">
+    <ellipse cx="390" cy="148" rx="85" ry="12" fill="#16A34A15" stroke="#16A34A" stroke-width="2.6"/>
+    <path d="M305,148 L305,185 A85,12 0 0,0 475,185 L475,148" fill="#16A34A15" stroke="#16A34A" stroke-width="2.6"/>
+    <ellipse cx="390" cy="185" rx="85" ry="12" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+  </g>
+  <text x="390" y="167" text-anchor="middle" dominant-baseline="central" fill="#16A34A" class="txt-main">READ INPUT</text>
+
+  <!-- ARROW 2: READ INPUT -> INITIALIZATION -->
+  <path d="M390,198 Q390,212 390,225" fill="none" stroke="#16A34A" stroke-width="2.8" marker-end="url(#arr-green)" filter="url(#roughen)"/>
+  <circle cx="415" cy="212" r="11" fill="white" stroke="#16A34A" stroke-width="2" filter="url(#roughen)"/>
+  <text x="415" y="212" text-anchor="middle" dominant-baseline="central" fill="#16A34A" class="txt-badge">2</text>
+
+  <!-- 4. INITIALIZATION BOX -->
+  <g filter="url(#roughen)" id="init-box">
+    <rect x="250" y="230" width="280" height="75" rx="8" fill="#7C3AED10" stroke="#7C3AED" stroke-width="2.8" stroke-linecap="round"/>
+    <rect x="270" y="262" width="240" height="32" rx="5" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.8"/>
+  </g>
+  <text x="390" y="248" text-anchor="middle" fill="#7C3AED" class="txt-title">INITIALIZATION</text>
+  <text x="390" y="278" text-anchor="middle" dominant-baseline="central" fill="#4B5563" class="txt-sub">Plot metrics imputation</text>
+
+  <!-- ARROW 3: INITIALIZATION -> SCENARIO -->
+  <path d="M390,306 Q390,324 390,340" fill="none" stroke="#7C3AED" stroke-width="2.8" marker-end="url(#arr-purple)" filter="url(#roughen)"/>
+  <circle cx="415" cy="323" r="11" fill="white" stroke="#7C3AED" stroke-width="2" filter="url(#roughen)"/>
+  <text x="415" y="323" text-anchor="middle" dominant-baseline="central" fill="#7C3AED" class="txt-badge">3</text>
+
+  <!-- 5. DECISION DIAMOND (READ SCENARIO) -->
+  <g filter="url(#roughen)" id="decision-diamond">
+    <path d="M390,345 L490,388 L390,430 L290,388 Z" fill="#EA580C15" stroke="#EA580C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="390" y="380" text-anchor="middle" dominant-baseline="central" fill="#EA580C" class="txt-main">READ SCENARIO</text>
+  <text x="390" y="398" text-anchor="middle" dominant-baseline="central" fill="#EA580C" class="txt-sub">(Next action?)</text>
+
+  <!-- ================= LEFT BRANCH: TIME PROJECTION ================= -->
+  <!-- ARROW 4A: SCENARIO -> TIME PROJECTION -->
+  <path d="M290,388 C225,388 185,420 185,450" fill="none" stroke="#2563EB" stroke-width="2.8" marker-end="url(#arr-blue)" filter="url(#roughen)"/>
+  <circle cx="225" cy="388" r="11" fill="white" stroke="#2563EB" stroke-width="2" filter="url(#roughen)"/>
+  <text x="225" y="388" text-anchor="middle" dominant-baseline="central" fill="#2563EB" class="txt-badge">4</text>
+  <text x="180" y="430" text-anchor="middle" fill="#2563EB" class="txt-main">Apply projection</text>
+
+  <!-- TIME PROJECTION BOX -->
+  <g filter="url(#roughen)" id="projection-box">
+    <rect x="65" y="455" width="245" height="175" rx="8" fill="#2563EB10" stroke="#2563EB" stroke-width="2.8" stroke-linecap="round"/>
+    <rect x="80" y="490" width="215" height="32" rx="5" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+    <rect x="80" y="530" width="215" height="32" rx="5" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+    <rect x="80" y="570" width="215" height="32" rx="5" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+  </g>
+  <text x="187" y="475" text-anchor="middle" fill="#2563EB" class="txt-title">TIME PROJECTION</text>
+  <text x="187" y="506" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Growth</text>
+  <text x="187" y="546" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Survival</text>
+  <text x="187" y="586" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Stand metrics update</text>
+
+  <!-- RETURN LOOP PROJECTION -> SCENARIO -->
+  <path d="M187,631 C187,690 35,690 35,535 C35,388 205,372 285,384" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arr-blue)" filter="url(#roughen)"/>
+  <circle cx="35" cy="535" r="11" fill="white" stroke="#2563EB" stroke-width="2" filter="url(#roughen)"/>
+  <text x="35" y="535" text-anchor="middle" dominant-baseline="central" fill="#2563EB" class="txt-badge">5</text>
+  <text x="30" y="505" text-anchor="end" fill="#2563EB" class="txt-sub" transform="rotate(-90,30,505)">NEXT ACTION</text>
+
+  <!-- ================= RIGHT BRANCH: CUTTING / THINNING ================= -->
+  <!-- ARROW 4B: SCENARIO -> CUTTING -->
+  <path d="M490,388 C555,388 595,420 595,450" fill="none" stroke="#DB2777" stroke-width="2.8" marker-end="url(#arr-pink)" filter="url(#roughen)"/>
+  <circle cx="555" cy="388" r="11" fill="white" stroke="#DB2777" stroke-width="2" filter="url(#roughen)"/>
+  <text x="555" y="388" text-anchor="middle" dominant-baseline="central" fill="#DB2777" class="txt-badge">6</text>
+  <text x="600" y="430" text-anchor="middle" fill="#DB2777" class="txt-main">Apply harvest</text>
+
+  <!-- CAJA CORTAS -->
+  <g filter="url(#roughen)" id="thinning-box">
+    <rect x="470" y="455" width="245" height="135" rx="8" fill="#DB277710" stroke="#DB2777" stroke-width="2.8" stroke-linecap="round"/>
+    <rect x="485" y="490" width="215" height="32" rx="5" fill="#FFFFFF" stroke="#DB2777" stroke-width="1.6"/>
+    <rect x="485" y="530" width="215" height="32" rx="5" fill="#FFFFFF" stroke="#DB2777" stroke-width="1.6"/>
+  </g>
+  <text x="592" y="475" text-anchor="middle" fill="#DB2777" class="txt-title">HARVEST / TREATMENTS</text>
+  <text x="592" y="506" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Harvest / cutting execution</text>
+  <text x="592" y="546" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Plot metrics update</text>
+
+  <!-- RETURN LOOP CORTA -> SCENARIO -->
+  <path d="M592,591 C592,670 745,670 745,510 C745,388 575,372 495,384" fill="none" stroke="#DB2777" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arr-pink)" filter="url(#roughen)"/>
+  <circle cx="745" cy="510" r="11" fill="white" stroke="#DB2777" stroke-width="2" filter="url(#roughen)"/>
+  <text x="745" y="510" text-anchor="middle" dominant-baseline="central" fill="#DB2777" class="txt-badge">7</text>
+  <text x="750" y="480" text-anchor="start" fill="#DB2777" class="txt-sub" transform="rotate(90,750,480)">NEXT ACTION</text>
+
+  <!-- ================= CENTRAL BRANCH: END ================= -->
+  <!-- ARROW 8: SCENARIO -> WRITE OUTPUT -->
+  <path d="M390,430 Q390,575 390,720" fill="none" stroke="#16A34A" stroke-width="2.8" marker-end="url(#arr-green)" filter="url(#roughen)"/>
+  <circle cx="415" cy="565" r="11" fill="white" stroke="#16A34A" stroke-width="2" filter="url(#roughen)"/>
+  <text x="415" y="565" text-anchor="middle" dominant-baseline="central" fill="#16A34A" class="txt-badge">8</text>
+  <text x="365" y="565" text-anchor="middle" dominant-baseline="central" fill="#16A34A" class="txt-main" transform="rotate(-90,365,565)">No more actions</text>
+
+  <!-- 6. WRITE OUTPUT -->
+  <g filter="url(#roughen)" id="write-output">
+    <ellipse cx="390" cy="740" rx="85" ry="12" fill="#16A34A15" stroke="#16A34A" stroke-width="2.6"/>
+    <path d="M305,740 L305,777 A85,12 0 0,0 475,777 L475,740" fill="#16A34A15" stroke="#16A34A" stroke-width="2.6"/>
+    <ellipse cx="390" cy="777" rx="85" ry="12" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+  </g>
+  <text x="390" y="759" text-anchor="middle" dominant-baseline="central" fill="#16A34A" class="txt-main">WRITE OUTPUT</text>
+
+  <!-- ARROW 9: WRITE OUTPUT -> END -->
+  <path d="M390,790 Q390,815 390,835" fill="none" stroke="#2563EB" stroke-width="2.8" marker-end="url(#arr-blue)" filter="url(#roughen)"/>
+  <circle cx="415" cy="812" r="11" fill="white" stroke="#2563EB" stroke-width="2" filter="url(#roughen)"/>
+  <text x="415" y="812" text-anchor="middle" dominant-baseline="central" fill="#2563EB" class="txt-badge">9</text>
+
+  <!-- 7. END NODE -->
+  <g filter="url(#roughen)" id="end-node">
+    <rect x="280" y="840" width="220" height="42" rx="21" fill="#2563EB15" stroke="#2563EB" stroke-width="2.8" stroke-linecap="round"/>
+  </g>
+  <text x="390" y="861" text-anchor="middle" dominant-baseline="central" fill="#2563EB" class="txt-main">END SIMULATION</text>
+</svg>

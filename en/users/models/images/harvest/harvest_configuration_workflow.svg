@@ -1,0 +1,111 @@
+<svg viewBox="0 0 960 380" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'Caveat',cursive;">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;display=swap');
+      .txt-title { font-size: 17px; font-weight: 700; }
+      .txt-main { font-size: 16px; font-weight: 600; }
+      .txt-sub { font-size: 14px; font-weight: 500; }
+      .txt-badge { font-size: 15px; font-weight: 700; }
+    </style>
+    <filter id="roughen" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <marker id="arr-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0.5 L9,3.5 L0,6.5" fill="none" stroke="#2563EB" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0.5 L9,3.5 L0,6.5" fill="none" stroke="#16A34A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0.5 L9,3.5 L0,6.5" fill="none" stroke="#EA580C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- GENERAL TITLE -->
+  <g id="header">
+    <text x="480" y="32" text-anchor="middle" fill="#1E293B" class="txt-title" font-size="22">HARVEST CONFIGURATION IN SIMANFOR</text>
+  </g>
+
+  <!-- ================= 1. HARVEST MODEL ================= -->
+  <g filter="url(#roughen)" id="card-model">
+    <rect x="25" y="55" width="205" height="305" rx="8" fill="#2563EB10" stroke="#2563EB" stroke-width="2.8" stroke-linecap="round"/>
+    <rect x="37" y="90" width="181" height="33" rx="5" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+    <rect x="37" y="132" width="181" height="33" rx="5" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+    <rect x="37" y="174" width="181" height="33" rx="5" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+    <rect x="37" y="216" width="181" height="33" rx="5" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+    <rect x="37" y="258" width="181" height="33" rx="5" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+    <rect x="37" y="300" width="181" height="33" rx="5" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+  </g>
+  <text x="127" y="78" text-anchor="middle" fill="#2563EB" class="txt-title">1. HARVEST MODEL</text>
+  <text x="127" y="107" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Thinning from below</text>
+  <text x="127" y="149" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Thinning from above</text>
+  <text x="127" y="191" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Systematic thinning</text>
+  <text x="127" y="233" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Thinning with future trees</text>
+  <text x="127" y="275" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Thinning by species (mixed)</text>
+  <text x="127" y="317" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Stand-level models</text>
+
+  <!-- ARROW 1 -> 2 -->
+  <path d="M230,207 Q245,207 260,207" fill="none" stroke="#2563EB" stroke-width="2.8" marker-end="url(#arr-blue)" filter="url(#roughen)"/>
+  <circle cx="245" cy="188" r="11" fill="white" stroke="#2563EB" stroke-width="2" filter="url(#roughen)"/>
+  <text x="245" y="188" text-anchor="middle" dominant-baseline="central" fill="#2563EB" class="txt-badge">1</text>
+
+  <!-- ================= 2. CRITERION (TYPE) ================= -->
+  <g filter="url(#roughen)" id="card-criterion">
+    <rect x="265" y="55" width="205" height="305" rx="8" fill="#16A34A10" stroke="#16A34A" stroke-width="2.8" stroke-linecap="round"/>
+    <rect x="277" y="105" width="181" height="48" rx="5" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.6"/>
+    <rect x="277" y="172" width="181" height="48" rx="5" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.6"/>
+    <rect x="277" y="239" width="181" height="48" rx="5" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.6"/>
+  </g>
+  <text x="367" y="78" text-anchor="middle" fill="#16A34A" class="txt-title">2. CRITERION (TYPE)</text>
+  <text x="367" y="121" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-main">Density</text>
+  <text x="367" y="139" text-anchor="middle" dominant-baseline="central" fill="#64748B" class="txt-sub">(trees / ha)</text>
+  <text x="367" y="188" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-main">Basal area</text>
+  <text x="367" y="206" text-anchor="middle" dominant-baseline="central" fill="#64748B" class="txt-sub">(m² / ha)</text>
+  <text x="367" y="255" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-main">Volume</text>
+  <text x="367" y="273" text-anchor="middle" dominant-baseline="central" fill="#64748B" class="txt-sub">(m³ / ha)</text>
+
+  <!-- ARROW 2 -> 3 -->
+  <path d="M470,207 Q485,207 500,207" fill="none" stroke="#16A34A" stroke-width="2.8" marker-end="url(#arr-green)" filter="url(#roughen)"/>
+  <circle cx="485" cy="188" r="11" fill="white" stroke="#16A34A" stroke-width="2" filter="url(#roughen)"/>
+  <text x="485" y="188" text-anchor="middle" dominant-baseline="central" fill="#16A34A" class="txt-badge">2</text>
+
+  <!-- ================= 3. INTENSITY (PERCENT) ================= -->
+  <g filter="url(#roughen)" id="card-intensity">
+    <rect x="505" y="55" width="205" height="305" rx="8" fill="#EA580C10" stroke="#EA580C" stroke-width="2.8" stroke-linecap="round"/>
+    <rect x="517" y="115" width="181" height="60" rx="5" fill="#FFFFFF" stroke="#EA580C" stroke-width="1.6"/>
+    <rect x="517" y="205" width="181" height="60" rx="5" fill="#FFFFFF" stroke="#EA580C" stroke-width="1.6"/>
+  </g>
+  <text x="607" y="78" text-anchor="middle" fill="#EA580C" class="txt-title">3. INTENSITY (PERCENT)</text>
+  <text x="607" y="137" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-main">Range: 0 to 100 %</text>
+  <text x="607" y="157" text-anchor="middle" dominant-baseline="central" fill="#64748B" class="txt-sub">(percentage value)</text>
+  <text x="607" y="227" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-main">% tied to harvest model</text>
+  <text x="607" y="247" text-anchor="middle" dominant-baseline="central" fill="#64748B" class="txt-sub">and thinning criterion</text>
+
+  <!-- ARROW 3 -> 4 -->
+  <path d="M710,207 Q725,207 740,207" fill="none" stroke="#EA580C" stroke-width="2.8" marker-end="url(#arr-orange)" filter="url(#roughen)"/>
+  <circle cx="725" cy="188" r="11" fill="white" stroke="#EA580C" stroke-width="2" filter="url(#roughen)"/>
+  <text x="725" y="188" text-anchor="middle" dominant-baseline="central" fill="#EA580C" class="txt-badge">3</text>
+
+  <!-- ================= 4. EXTRA SETTINGS ================= -->
+  <g filter="url(#roughen)" id="card-settings">
+    <rect x="745" y="55" width="190" height="305" rx="8" fill="#7C3AED10" stroke="#7C3AED" stroke-width="2.8" stroke-linecap="round"/>
+    <rect x="756" y="90" width="168" height="42" rx="5" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.6"/>
+    <rect x="756" y="142" width="168" height="42" rx="5" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.6"/>
+    <rect x="756" y="194" width="168" height="42" rx="5" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.6"/>
+    <rect x="756" y="246" width="168" height="42" rx="5" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.6"/>
+    <rect x="756" y="298" width="168" height="42" rx="5" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.6"/>
+  </g>
+  <text x="840" y="78" text-anchor="middle" fill="#7C3AED" class="txt-title">4. EXTRA SETTINGS</text>
+  <text x="840" y="104" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Future crop trees</text>
+  <text x="840" y="120" text-anchor="middle" dominant-baseline="central" fill="#64748B" font-size="12">preserve_trees (%)</text>
+  <text x="840" y="156" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Target species</text>
+  <text x="840" y="172" text-anchor="middle" dominant-baseline="central" fill="#64748B" font-size="12">species (IFN code)</text>
+  <text x="840" y="208" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Calculation scope</text>
+  <text x="840" y="224" text-anchor="middle" dominant-baseline="central" fill="#64748B" font-size="12">volume_target (plot/sp)</text>
+  <text x="840" y="260" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Minimum age</text>
+  <text x="840" y="276" text-anchor="middle" dominant-baseline="central" fill="#64748B" font-size="12">min_age (years)</text>
+  <text x="840" y="312" text-anchor="middle" dominant-baseline="central" fill="#1E293B" class="txt-sub">Maximum age</text>
+  <text x="840" y="328" text-anchor="middle" dominant-baseline="central" fill="#64748B" font-size="12">max_age (years)</text>
+</svg>
