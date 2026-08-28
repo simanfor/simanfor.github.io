@@ -1,0 +1,163 @@
+<svg viewBox="0 0 1100 620" xmlns="http://www.w3.org/2000/svg"
+     style="background:#FFFFFF; font-family:'Caveat', cursive;">
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;display=swap');
+    </style>
+
+    <!-- Filtro orgánico de trazo rotulador -->
+    <filter id="roughen" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <!-- Marcadores de flecha -->
+    <marker id="arrow-blue" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0.8 L10,4 L0,7.2" fill="none" stroke="#2563EB" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+
+    <marker id="arrow-orange" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0.8 L10,4 L0,7.2" fill="none" stroke="#EA580C" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+
+    <marker id="arrow-green" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0.8 L10,4 L0,7.2" fill="none" stroke="#16A34A" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- ========================================== -->
+  <!-- TÍTULO PRINCIPAL (2 LÍNEAS)                -->
+  <!-- ========================================== -->
+  <text x="550" y="42" text-anchor="middle" font-size="28" font-weight="700" fill="#1E293B"
+        transform="rotate(-0.4, 550, 42)">
+    TRANSITION AND CENTRALIZATION
+  </text>
+  <text x="550" y="74" text-anchor="middle" font-size="24" font-weight="700" fill="#1E293B"
+        transform="rotate(-0.2, 550, 74)">
+    OF SIMANFOR DOCUMENTATION
+  </text>
+  <path d="M 280,86 Q 550,82 820,86" fill="none" stroke="#94A3B8" stroke-width="2.5"
+        stroke-linecap="round" filter="url(#roughen)"/>
+
+  <!-- ========================================== -->
+  <!-- ENTIDAD 1: REPOSITORIOS HISTÓRICOS (GITHUB) -->
+  <!-- ========================================== -->
+  <g filter="url(#roughen)">
+    <rect x="40" y="130" width="270" height="310" rx="16" ry="16"
+          fill="#EA580C0D" stroke="#EA580C" stroke-width="3" stroke-linecap="round"/>
+    <!-- Icono carpeta centrado arriba -->
+    <rect x="145" y="152" width="50" height="34" rx="4" fill="#EA580C1A" stroke="#EA580C" stroke-width="2.2"/>
+    <path d="M 153,152 L 162,144 L 180,144 L 186,152" fill="none" stroke="#EA580C" stroke-width="2.2"/>
+  </g>
+  <text x="175" y="212" font-size="21" font-weight="700" fill="#EA580C" text-anchor="middle">
+    HISTORICAL REPOS
+  </text>
+  <text x="175" y="235" font-size="14" font-weight="600" fill="#C2410C" text-anchor="middle">
+    GITHUB / SIMANFOR
+  </text>
+  <!-- Lista de repositorios con margen amplio -->
+  <text x="65" y="272" font-size="15" font-weight="600" fill="#C2410C">• /MODELS</text>
+  <text x="65" y="299" font-size="15" font-weight="600" fill="#C2410C">• /INVENTORIES</text>
+  <text x="65" y="326" font-size="15" font-weight="600" fill="#C2410C">• /SCENARIOS</text>
+  <text x="65" y="353" font-size="15" font-weight="600" fill="#C2410C">• /MANUAL &amp; PUBLICATIONS</text>
+  <text x="175" y="408" font-size="13" font-weight="700" fill="#9A3412" text-anchor="middle">
+    (MAINTAINED FOR REFERENCE)
+  </text>
+
+  <!-- ========================================== -->
+  <!-- ENTIDAD 2: NUEVO PORTAL CENTRAL (SIMANFOR DOCS) -->
+  <!-- ========================================== -->
+  <g filter="url(#roughen)">
+    <rect x="410" y="120" width="280" height="330" rx="18" ry="18"
+          fill="#16A34A0D" stroke="#16A34A" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Icono libro/web centrado arriba -->
+    <circle cx="550" cy="158" r="22" fill="#16A34A1A" stroke="#16A34A" stroke-width="2.4"/>
+    <path d="M 539,158 Q 550,149 561,158 M 539,166 Q 550,157 561,166" fill="none" stroke="#16A34A" stroke-width="2"/>
+  </g>
+  <text x="550" y="206" font-size="23" font-weight="700" fill="#16A34A" text-anchor="middle">
+    SIMANFOR DOCS
+  </text>
+  <text x="550" y="230" font-size="15" font-weight="600" fill="#15803D" text-anchor="middle">
+    SIMANFOR.GITHUB.IO
+  </text>
+  <!-- Características del portal -->
+  <text x="435" y="268" font-size="15" font-weight="600" fill="#166534">✓ UNIFIED PORTAL (MKDOCS)</text>
+  <text x="435" y="296" font-size="15" font-weight="600" fill="#166534">✓ BILINGUAL (ES / EN)</text>
+  <text x="435" y="324" font-size="15" font-weight="600" fill="#166534">✓ MODEL SHEETS &amp; DOCKER</text>
+  <text x="435" y="352" font-size="15" font-weight="600" fill="#166534">✓ REAL-TIME SEARCH</text>
+  <text x="550" y="415" font-size="13" font-weight="700" fill="#14532D" text-anchor="middle">
+    [GRADUAL MIGRATION]
+  </text>
+
+  <!-- ========================================== -->
+  <!-- ENTIDAD 3: USUARIOS Y COMUNIDAD FORESTAL   -->
+  <!-- ========================================== -->
+  <g filter="url(#roughen)">
+    <rect x="790" y="130" width="270" height="310" rx="16" ry="16"
+          fill="#2563EB0D" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+    <!-- Icono persona centrado arriba -->
+    <circle cx="925" cy="162" r="18" fill="#2563EB1A" stroke="#2563EB" stroke-width="2.4"/>
+    <path d="M 903,205 Q 925,185 947,205" fill="#2563EB1A" stroke="#2563EB" stroke-width="2.4"/>
+  </g>
+  <text x="925" y="235" font-size="22" font-weight="700" fill="#2563EB" text-anchor="middle">
+    COMMUNITY
+  </text>
+  <text x="925" y="270" font-size="16" font-weight="600" fill="#1D4ED8" text-anchor="middle">
+    RESEARCHERS,
+  </text>
+  <text x="925" y="298" font-size="16" font-weight="600" fill="#1D4ED8" text-anchor="middle">
+    MANAGERS &amp;
+  </text>
+  <text x="925" y="326" font-size="16" font-weight="600" fill="#1D4ED8" text-anchor="middle">
+    DEVELOPERS
+  </text>
+  <text x="925" y="388" font-size="14" font-weight="600" fill="#1E40AF" text-anchor="middle">
+    (SIMULATOR USERS)
+  </text>
+
+  <!-- ========================================== -->
+  <!-- ENTIDAD 4: SIMULADOR WEB (SIMANFOR.ES)     -->
+  <!-- ========================================== -->
+  <g filter="url(#roughen)">
+    <rect x="360" y="500" width="380" height="95" rx="14" ry="14"
+          fill="#EF44440D" stroke="#EF4444" stroke-width="2.8" stroke-linecap="round"/>
+  </g>
+  <text x="550" y="538" font-size="22" font-weight="700" fill="#EF4444" text-anchor="middle">
+    SIMANFOR.ES
+  </text>
+  <text x="550" y="568" font-size="15" font-weight="600" fill="#B91C1C" text-anchor="middle">
+    SIMULATION ENGINE &amp; WEB PLATFORM
+  </text>
+
+  <!-- ========================================== -->
+  <!-- FLECHAS DE FLUJO Y PASOS NUMERADOS         -->
+  <!-- ========================================== -->
+
+  <!-- FLECHA 1: Migración (Repos históricos -> SIMANFOR Docs) -->
+  <path d="M 310,265 C 340,245 375,245 405,260" fill="none" stroke="#EA580C" stroke-width="2.8"
+        stroke-linecap="round" marker-end="url(#arrow-orange)" filter="url(#roughen)"/>
+  <text x="360" y="218" text-anchor="middle" font-size="14" font-weight="700" fill="#EA580C"
+        transform="rotate(-2, 360, 218)">MIGRATION</text>
+  <circle cx="360" cy="245" r="14" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.4" filter="url(#roughen)"/>
+  <text x="360" y="245" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#EA580C">1</text>
+
+  <!-- FLECHA 2: Consulta (Comunidad -> SIMANFOR Docs) -->
+  <path d="M 790,265 C 760,245 725,245 695,260" fill="none" stroke="#2563EB" stroke-width="2.8"
+        stroke-linecap="round" marker-end="url(#arrow-blue)" filter="url(#roughen)"/>
+  <text x="742" y="218" text-anchor="middle" font-size="14" font-weight="700" fill="#2563EB"
+        transform="rotate(2, 742, 218)">ACCESS</text>
+  <circle cx="742" cy="245" r="14" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.4" filter="url(#roughen)"/>
+  <text x="742" y="245" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#2563EB">2</text>
+
+  <!-- FLECHA 3: Ejecución (SIMANFOR Docs -> SIMANFOR.ES) -->
+  <path d="M 550,450 L 550,492" fill="none" stroke="#16A34A" stroke-width="2.8"
+        stroke-linecap="round" marker-end="url(#arrow-green)" filter="url(#roughen)"/>
+  <text x="475" y="475" text-anchor="middle" font-size="14" font-weight="700" fill="#166534">EXECUTION</text>
+  <circle cx="585" cy="472" r="14" fill="#FFFFFF" stroke="#16A34A" stroke-width="2.4" filter="url(#roughen)"/>
+  <text x="585" y="472" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#166534">3</text>
+
+</svg>
