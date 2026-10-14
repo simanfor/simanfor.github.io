@@ -1,0 +1,2778 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://simanfor.github.io/en/users/variables/04_dimensiones/">
+      
+      
+        <link rel="prev" href="../03_productividad/">
+      
+      
+        <link rel="next" href="../05_volumen/">
+      
+      
+        
+          <link rel="alternate" href="../../../../users/variables/04_dimensiones/" hreflang="es">
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/simanfor_tree.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Forest dimensions - SIMANFOR DOCS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Poppins";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#forest-dimensions-and-growth-metrics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../" title="SIMANFOR DOCS" class="md-header__button md-logo" aria-label="SIMANFOR DOCS" data-md-component="logo">
+      
+  <img src="../../../../assets/simanfor_tree.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SIMANFOR DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Forest dimensions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <div class="md-header__option">
+  <div class="lang-toggle">
+    
+      
+        <a href="../../../../users/variables/04_dimensiones/" hreflang="es" class="lang-toggle__item">
+          ES
+        </a>
+      
+    
+      
+        <span class="lang-toggle__item lang-toggle__item--active">EN</span>
+      
+    
+  </div>
+</div>
+    
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="SIMANFOR DOCS" class="md-nav__button md-logo" aria-label="SIMANFOR DOCS" data-md-component="logo">
+      
+  <img src="../../../../assets/simanfor_tree.png" alt="logo">
+
+    </a>
+    SIMANFOR DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Users guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Users guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Docker
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/01_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction and concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/02_quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Obtaining the image and quickstart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/03_volumes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder configuration and execution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/04_examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practical examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Models
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/02_harvest_models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harvest models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Individual-tree models
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Individual-tree models
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/calculate_height_Spain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Height calculation for Spain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/existencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yield model (Spain)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/IBEROPS_calibrated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPS (calibrated)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/IBEROPS_original/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPS (original)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/IBEROPT_calibrated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPT (calibrated)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/IBEROPT_original/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPT (original)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/mixed_models_Spain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixed stands of Spain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/pure_models_Spain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pure stands of Spain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Ppinea__and/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PINEA Andalucía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Ppinea__cat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PINEA in Catalonia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Ppinea__sc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PINEA Central System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Phalepensis__aragon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus halepensis in Aragón
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Phalepensis__cat_ar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus halepensis in Cataluña and Aragón
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Pnigra__cat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus nigra in Cataluña
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Psylvestris__cat_nat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris Catalonia natural stands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Psylvestris__cat_plant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris Catalonia plantations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Qpyrenaica__cyl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus pyrenaica in Castille and Leon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Qpyrenaica__liferebollo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus pyrenaica in Castille and Leon - Life+Reb Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/RAP_ORGANON/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAP-ORGANON, Alnus rubra plantations in Oregon and Washington (USA)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/SiTree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SiTree - Norway model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand-level models
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Stand-level models
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Bpubescens_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Betula pubescens in Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Cladanifer_stand__zam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cistus ladanifer in Zamora
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Romania_stand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand models for Romania
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Romania_stand_bau/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand models for Romania (BAU)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Pnigra_stand__CyL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus nigra in Castilla y León
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Ppinaster_at_stand__gal_coast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus pinaster in coastal areas of Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Ppinaster_at_stand__gal_inland/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus pinaster in inland areas of Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Ppinaster_m_stand__iberian_peninsula/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus pinaster mesogeensis in the Iberian Peninsula
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Pradiata_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus radiata in Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Psylvestris_stand__High_Ebro_Basin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris in the High Ebro Basin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Psylvestris_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris in Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Psylvestris_stand__Ukraine/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris in Ukraine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Populus_sp_stand__NE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Populus sp. in Northeast Spain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Qpetraea_stand__ccant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus petraea in the Cantabrian Mountains
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Qrobur_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus robur in Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/RETECHFOR_stand__cyl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RETECHFOR - Castilla y León
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/SILVES_stand__mad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SILVES - Pinus sylvestris in Madrid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/SILVES_stand__si-sc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SILVES - Pinus sylvestris in Iberian System and Central System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Tgrandis_stand__campeche/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tectona grandis in Campeche (Mexico)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../publications/01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Variables
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_identificacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory identification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_productividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand productivity and site quality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Forest dimensions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Forest dimensions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#plot-level-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plot-level variables
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tree-level-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tree-level variables
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_volumen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Timber volume
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_productos_madera/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wood products
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_biomasa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biomass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_carbono/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Carbon stock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_recursos_no_maderables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-wood products
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_dinamica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand dynamics and management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_competencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Density and competition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_estructura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand structure and crowns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_diversidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biodiversity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14_estacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Site quality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15_clima/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Climate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16_lidar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LiDAR metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#plot-level-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plot-level variables
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tree-level-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tree-level variables
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+  
+  
+                  
+
+
+
+<h1 id="forest-dimensions-and-growth-metrics">Forest dimensions and growth metrics</h1>
+<p>Fundamental mensuration metrics measured and calculated at tree level (diameter at breast height, height, crown dimensions) and stand level (basal area, quadratic mean diameter, dominant height).</p>
+<h2 id="plot-level-variables">Plot-level variables</h2>
+<ul>
+<li>
+<p><strong><code>Age</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>years</code> &nbsp;•&nbsp; <code>output: T</code></p>
+<p>Mean age of the forest stand in the plot.</p>
+<p><em>Accepted inventory aliases:</em> <code>edad</code>, <code>t</code>, <code>stand_age</code></p>
+</li>
+<li>
+<p><strong><code>Density</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>trees/ha</code> &nbsp;•&nbsp; <code>output: N</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Number of trees per hectare.</p>
+<p><em>Accepted inventory aliases:</em> <code>n</code>, <code>pies_ha</code>, <code>densidad</code>, <code>density</code></p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>Density_SP1</code>, <code>Density_SP2</code>, <code>Density_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>Species {num} density proportion</code></strong> (<code>N_PROPORTION</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>ratio</code> &nbsp;•&nbsp; <code>output: N_prop</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Proportion of trees of species {num} relative to total stand density.</p>
+<p><em>Accepted inventory aliases:</em> <code>n_prop</code>, <code>n_proportion</code>, <code>proporcion_n</code>, <code>{sp_lower}_n_prop</code>, <code>{sp_lower}_n_proportion</code>, <code>n_prop_{sp_lower}</code></p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>Species SP1 density proportion</code>, <code>Species SP2 density proportion</code>, <code>Species SP3 density proportion</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>quadratic_mean_diameter</code></strong> (<code>QM_DBH</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>cm</code> &nbsp;•&nbsp; <code>output: dg</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Quadratic mean diameter of the plot.</p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>quadratic_mean_diameter_SP1</code>, <code>quadratic_mean_diameter_SP2</code>, <code>quadratic_mean_diameter_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>mean_diameter_at_breast_height</code></strong> (<code>MEAN_DBH</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>cm</code> &nbsp;•&nbsp; <code>output: d_mean</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Arithmetic mean diameter at breast height in the plot.</p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>mean_diameter_at_breast_height_SP1</code>, <code>mean_diameter_at_breast_height_SP2</code>, <code>mean_diameter_at_breast_height_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>Basal_area</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>m2/ha</code> &nbsp;•&nbsp; <code>output: G</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Cross-sectional area of tree stems at breast height of all the trees within the plot.</p>
+<p><em>Accepted inventory aliases:</em> <code>g</code>, <code>g_ha</code>, <code>area_basimetrica</code>, <code>basal_area</code></p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>Basal_area_SP1</code>, <code>Basal_area_SP2</code>, <code>Basal_area_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>Species {num} basal area proportion</code></strong> (<code>G_PROPORTION</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>ratio</code> &nbsp;•&nbsp; <code>output: G_prop</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Proportion of basal area of species {num} relative to total stand basal area.</p>
+<p><em>Accepted inventory aliases:</em> <code>g_prop</code>, <code>g_proportion</code>, <code>proporcion_g</code>, <code>{sp_lower}_g_prop</code>, <code>{sp_lower}_g_proportion</code>, <code>g_prop_{sp_lower}</code></p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>Species SP1 basal area proportion</code>, <code>Species SP2 basal area proportion</code>, <code>Species SP3 basal area proportion</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>Species {num} proportion</code></strong> (<code>PROPORTION</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>ratio</code> &nbsp;•&nbsp; <code>output: prop</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2</code></p>
+<p>Proportion of species {num} in mixed stands.</p>
+<p><em>Accepted inventory aliases:</em> <code>prop</code>, <code>proportion</code>, <code>proporcion</code>, <code>{sp_lower}_prop</code>, <code>{sp_lower}_proportion</code>, <code>prop_{sp_lower}</code></p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>Species SP1 proportion</code>, <code>Species SP2 proportion</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>Dominant_diameter</code></strong> (<code>DOMINANT_DBH</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>cm</code> &nbsp;•&nbsp; <code>output: Do</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Dominant diameter, calculated as the mean diameter of the 100 thickest trees per hectare.</p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>Dominant_diameter_SP1</code>, <code>Dominant_diameter_SP2</code>, <code>Dominant_diameter_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>Dominant_section</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>cm</code> &nbsp;•&nbsp; <code>output: So</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Mean cross-sectional area of dominant trees in the plot.</p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>Dominant_section_SP1</code>, <code>Dominant_section_SP2</code>, <code>Dominant_section_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>mean_height</code></strong> (<code>MEAN_H</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>m</code> &nbsp;•&nbsp; <code>output: h_mean</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Arithmetic mean tree height in the plot.</p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>mean_height_SP1</code>, <code>mean_height_SP2</code>, <code>mean_height_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>Dominant_height</code></strong> (<code>DOMINANT_H</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>m</code> &nbsp;•&nbsp; <code>output: Ho</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Dominant stand height (mean height of the 100 largest trees per hectare).</p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>Dominant_height_SP1</code>, <code>Dominant_height_SP2</code>, <code>Dominant_height_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>minimum_basal_area</code></strong> (<code>BA_MIN</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>cm2</code> &nbsp;•&nbsp; <code>output: g_min</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Minimum individual tree basal area in the plot.</p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>minimum_basal_area_SP1</code>, <code>minimum_basal_area_SP2</code>, <code>minimum_basal_area_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>mean_basal_area</code></strong> (<code>MEAN_BA</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>cm2</code> &nbsp;•&nbsp; <code>output: g_mean</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Mean individual tree basal area in the plot.</p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>mean_basal_area_SP1</code>, <code>mean_basal_area_SP2</code>, <code>mean_basal_area_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>maximum_basal_area</code></strong> (<code>BA_MAX</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>cm2</code> &nbsp;•&nbsp; <code>output: g_max</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Maximum individual tree basal area in the plot.</p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>maximum_basal_area_SP1</code>, <code>maximum_basal_area_SP2</code>, <code>maximum_basal_area_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>minimum_diameter_at_breast_height</code></strong> (<code>DBH_MIN</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>cm</code> &nbsp;•&nbsp; <code>output: d_min</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Minimum diameter at breast height in the plot.</p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>minimum_diameter_at_breast_height_SP1</code>, <code>minimum_diameter_at_breast_height_SP2</code>, <code>minimum_diameter_at_breast_height_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>maximum_diameter_at_breast_height</code></strong> (<code>DBH_MAX</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>cm</code> &nbsp;•&nbsp; <code>output: d_max</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Maximum diameter at breast height in the plot.</p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>maximum_diameter_at_breast_height_SP1</code>, <code>maximum_diameter_at_breast_height_SP2</code>, <code>maximum_diameter_at_breast_height_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>minimum_height</code></strong> (<code>H_MIN</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>m</code> &nbsp;•&nbsp; <code>output: h_min</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Minimum total tree height in the plot.</p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>minimum_height_SP1</code>, <code>minimum_height_SP2</code>, <code>minimum_height_SP3</code>).</p>
+</blockquote>
+</li>
+<li>
+<p><strong><code>maximum_height</code></strong> (<code>H_MAX</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>m</code> &nbsp;•&nbsp; <code>output: h_max</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Maximum total tree height in the plot.</p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>maximum_height_SP1</code>, <code>maximum_height_SP2</code>, <code>maximum_height_SP3</code>).</p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h2 id="tree-level-variables">Tree-level variables</h2>
+<ul>
+<li>
+<p><strong><code>age</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>years</code> &nbsp;•&nbsp; <code>output: t</code></p>
+<p>Age of the individual tree.</p>
+<p><em>Accepted inventory aliases:</em> <code>tree_age</code>, <code>edad</code>, <code>t</code></p>
+</li>
+<li>
+<p><strong><code>expansion_factor</code></strong> (<code>expan</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>dimensionless</code> &nbsp;•&nbsp; <code>output: expan</code></p>
+<p>Tree expansion factor. Represents the number of trees per hectare that a measured tree represents.</p>
+<p><em>Accepted inventory aliases:</em> <code>expan</code>, <code>factor_expansion</code>, <code>expansion_factor</code></p>
+</li>
+<li>
+<p><strong><code>dbh_1</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>cm</code> &nbsp;•&nbsp; <code>output: d_1</code></p>
+<p>First cross caliper measurement of diameter at breast height. Used to measure diameter at breast height in a cross shape.</p>
+</li>
+<li>
+<p><strong><code>dbh_2</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>cm</code> &nbsp;•&nbsp; <code>output: d_2</code></p>
+<p>Second perpendicular cross caliper measurement of diameter at breast height. Used to measure diameter at breast height in a cross shape.</p>
+</li>
+<li>
+<p><strong><code>dbh_over_cork</code></strong> (<code>dbh_oc</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>cm</code> &nbsp;•&nbsp; <code>output: d_oc</code></p>
+<p>Diameter at breast height measured over the cork layer (<em>Quercus suber</em>).</p>
+</li>
+<li>
+<p><strong><code>dbh</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>cm</code> &nbsp;•&nbsp; <code>output: d</code></p>
+<p>Diameter at breast height of the tree (measured at 1.30 meters).</p>
+<p><em>Accepted inventory aliases:</em> <code>d</code>, <code>diametro</code>, <code>diametro_normal</code>, <code>d_normal</code>, <code>diameter</code>, <code>dn</code></p>
+</li>
+<li>
+<p><strong><code>bark_1</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>mm</code> &nbsp;•&nbsp; <code>output: bark_1</code></p>
+<p>First measurement of bark thickness at breast height (1.30 m). Used to measure bark thickness in a cross shape.</p>
+</li>
+<li>
+<p><strong><code>bark_2</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>mm</code> &nbsp;•&nbsp; <code>output: bark_2</code></p>
+<p>Second measurement of bark thickness at breast height (1.30 m). Used to measure bark thickness in a cross shape.</p>
+</li>
+<li>
+<p><strong><code>bark</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>mm</code> &nbsp;•&nbsp; <code>output: bark</code></p>
+<p>Mean tree bark thickness measured at 1.30 m.</p>
+</li>
+<li>
+<p><strong><code>basal_area</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>cm2</code> &nbsp;•&nbsp; <code>output: g</code></p>
+<p>Cross-sectional trunk area at 1.30 m height.</p>
+</li>
+<li>
+<p><strong><code>basal_area_intraspecific</code></strong> (<code>basal_area_intrasp</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>m2/ha</code> &nbsp;•&nbsp; <code>output: g_intrasp</code></p>
+<p>Basal area of trees of the same species as the subject tree, expressed as basal area per hectare.</p>
+</li>
+<li>
+<p><strong><code>basal_area_interspecific</code></strong> (<code>basal_area_intersp</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>m2/ha</code> &nbsp;•&nbsp; <code>output: g_intersp</code></p>
+<p>Basal area of trees of other species than the subject tree, expressed as basal area per hectare.</p>
+</li>
+<li>
+<p><strong><code>basal_area_per_hectare</code></strong> (<code>ba_ha</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>m2/ha</code> &nbsp;•&nbsp; <code>output: g_ha</code></p>
+<p>Subject tree basal area expressed per hectare (considering the tree expansion factor).</p>
+</li>
+<li>
+<p><strong><code>normal_circumference</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>cm</code> &nbsp;•&nbsp; <code>output: c</code></p>
+<p>Normal trunk circumference measured at 1.30 m from ground level.</p>
+</li>
+<li>
+<p><strong><code>stump_height</code></strong> (<code>stump_h</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>m</code> &nbsp;•&nbsp; <code>output: h_stump</code></p>
+<p>Stump height after tree felling.</p>
+</li>
+<li>
+<p><strong><code>total_height</code></strong> (<code>height</code>) — <code>decimal</code> &nbsp;•&nbsp; <code>m</code> &nbsp;•&nbsp; <code>output: h</code></p>
+<p>Total tree height from ground level to top apex.</p>
+<p><em>Accepted inventory aliases:</em> <code>h</code>, <code>altura</code>, <code>height</code></p>
+</li>
+</ul>
+<p><em>Translated using AI translation assistant.</em></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
