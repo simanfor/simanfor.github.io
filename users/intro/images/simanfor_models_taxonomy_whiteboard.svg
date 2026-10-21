@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="100%" height="100%">
+  <defs>
+    <filter id="roughen2" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&amp;display=swap');
+    text {
+      font-family: 'Caveat', cursive, sans-serif;
+      text-anchor: middle;
+    }
+    .title-main { font-size: 26px; font-weight: 700; fill: #1E293B; letter-spacing: 1px; }
+    .subtitle-main { font-size: 16px; font-weight: 600; fill: #64748B; }
+    .axis-title { font-size: 19px; font-weight: 700; fill: #0F172A; }
+    .item-title { font-size: 17px; font-weight: 700; }
+    .item-desc { font-size: 13px; font-weight: 600; fill: #475569; }
+  </style>
+
+  <!-- Background Whiteboard -->
+  <rect width="1000" height="520" fill="#FFFFFF" />
+
+  <!-- Header Title -->
+  <text x="500" y="42" class="title-main">TIPOS DE MODELOS FORESTALES EN SIMANFOR</text>
+  <text x="500" y="68" class="subtitle-main">CRITERIOS DASOMETRICOS DE CLASIFICACION Y ESCALAS DE PREDICCION</text>
+
+  <!-- ==================== 1. SEGUN UNIDAD MINIMA ==================== -->
+  <g transform="translate(40, 100)">
+    <path filter="url(#roughen2)" d="M 0 0 C 60 -2, 160 3, 215 0 C 218 55, 213 125, 215 175 C 160 178, 60 172, 0 175 C -3 125, 2 55, 0 0 Z" 
+          fill="#EFF6FF" stroke="#2563EB" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="108" y="32" class="axis-title">1. UNIDAD DE TRABAJO</text>
+    <line x1="20" y1="42" x2="195" y2="42" stroke="#BFDBFE" stroke-width="1.8" />
+    
+    <text x="108" y="68" class="item-title" fill="#1D4ED8">ARBOL INDIVIDUAL</text>
+    <text x="108" y="88" class="item-desc">SEGUIMIENTO PIE A PIE</text>
+    <text x="108" y="106" class="item-desc">COMPETENCIA INTERINDIVIDUAL</text>
+    
+    <text x="108" y="132" class="item-title" fill="#1D4ED8">MASA (RODAL)</text>
+    <text x="108" y="152" class="item-desc">VARIABLES GLOBALES: N, G, HO</text>
+    <text x="108" y="168" class="item-desc">RODALES COETANEOS REGULARES</text>
+  </g>
+
+  <!-- ==================== 2. SEGUN POSICION ESPACIAL ==================== -->
+  <g transform="translate(275, 100)">
+    <path filter="url(#roughen2)" d="M 0 0 C 60 2, 160 -2, 215 0 C 217 55, 212 125, 215 175 C 160 176, 60 174, 0 175 C -2 125, 3 55, 0 0 Z" 
+          fill="#F0FDF4" stroke="#16A34A" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="108" y="32" class="axis-title">2. POSICION ESPACIAL</text>
+    <line x1="20" y1="42" x2="195" y2="42" stroke="#BBF7D0" stroke-width="1.8" />
+    
+    <text x="108" y="68" class="item-title" fill="#15803D">INDEPENDIENTES</text>
+    <text x="108" y="88" class="item-desc">OMITEN COORDENADAS (X, Y)</text>
+    <text x="108" y="106" class="item-desc">ESPACIAMIENTO UNIFORME</text>
+    
+    <text x="108" y="132" class="item-title" fill="#15803D">DEPENDIENTES</text>
+    <text x="108" y="152" class="item-desc">NECESITAN COORDENADAS</text>
+    <text x="108" y="168" class="item-desc">DE LOS ARBOLES</text>
+  </g>
+
+  <!-- ==================== 3. SEGUN COMPOSICION ==================== -->
+  <g transform="translate(510, 100)">
+    <path filter="url(#roughen2)" d="M 0 0 C 60 -3, 160 2, 215 0 C 218 55, 213 125, 215 175 C 160 178, 60 172, 0 175 C -2 125, 2 55, 0 0 Z" 
+          fill="#FAF5FF" stroke="#9333EA" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="108" y="32" class="axis-title">3. COMPOSICION</text>
+    <line x1="20" y1="42" x2="195" y2="42" stroke="#E9D5FF" stroke-width="1.8" />
+    
+    <text x="108" y="68" class="item-title" fill="#7E22CE">MASAS PURAS</text>
+    <text x="108" y="88" class="item-desc">UNA SOLA ESPECIE PRINCIPAL</text>
+    <text x="108" y="106" class="item-desc">PARAMETROS MONOESPECIFICOS</text>
+    
+    <text x="108" y="132" class="item-title" fill="#7E22CE">MASAS MIXTAS</text>
+    <text x="108" y="152" class="item-desc">MULTIPLES ESPECIES CON</text>
+    <text x="108" y="168" class="item-desc">PARAMETROS ESPECIFICOS</text>
+  </g>
+
+  <!-- ==================== 4. SEGUN TIEMPO Y PROYECCION ==================== -->
+  <g transform="translate(745, 100)">
+    <path filter="url(#roughen2)" d="M 0 0 C 60 3, 160 -2, 215 0 C 217 55, 212 125, 215 175 C 160 176, 60 174, 0 175 C -3 125, 2 55, 0 0 Z" 
+          fill="#FFF7ED" stroke="#EA580C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="108" y="32" class="axis-title">4. CAPACIDAD TEMPORAL</text>
+    <line x1="20" y1="42" x2="195" y2="42" stroke="#FED7AA" stroke-width="1.8" />
+    
+    <text x="108" y="68" class="item-title" fill="#C2410C">ESTATICOS</text>
+    <text x="108" y="88" class="item-desc">CALCULO INSTANTANEO (T=0)</text>
+    <text x="108" y="106" class="item-desc">CUBICACION Y EXISTENCIAS</text>
+    
+    <text x="108" y="132" class="item-title" fill="#C2410C">DINAMICOS</text>
+    <text x="108" y="152" class="item-desc">PROYECCION TEMPORAL</text>
+    <text x="108" y="168" class="item-desc">CRECIMIENTO, MUERTE, INGROWTH</text>
+  </g>
+
+  <!-- ==================== BASE BANNER: PARAMETRIZACION ==================== -->
+  <g transform="translate(140, 320)">
+    <path filter="url(#roughen2)" d="M 0 0 C 220 -4, 500 4, 720 0 C 724 45, 718 105, 720 150 C 500 154, 220 147, 0 150 C -4 105, 3 45, 0 0 Z" 
+          fill="#F8FAFC" stroke="#0F172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <text x="360" y="38" class="axis-title" fill="#0F172A">EL PAPEL DE LA PARAMETRIZACION LOCAL</text>
+    <text x="360" y="66" class="item-desc" fill="#334155" font-size="14px">UN MISMO MODELO DE CRECIMIENTO Y PRODUCCION PUEDE CALIBRARSE PARA DISTINTAS CONDICIONES:</text>
+    
+    <text x="360" y="94" class="item-title" fill="#2563EB" font-size="16px">ESPECIE + REGION GEOGRAFICA + CALIDAD DE ESTACION</text>
+    <text x="360" y="122" class="item-desc" fill="#475569">EJEMPLO: LOS MODELOS IBERO DISPONEN DE DISTINTAS PARAMETRIZACIONES PARA</text>
+    <text x="360" y="138" class="item-desc" fill="#475569">PINUS PINASTER Y PINUS SYLVESTRIS Y DISTINTAS ADAPTACIONES REGIONALES</text>
+  </g>
+
+</svg>

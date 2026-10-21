@@ -1,0 +1,159 @@
+<svg viewBox="0 0 960 480" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:'Caveat',cursive;">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;display=swap');
+      .txt-title { font-size: 23px; font-weight: 700; }
+      .txt-card-title { font-size: 18px; font-weight: 700; }
+      .txt-sec-title { font-size: 15px; font-weight: 700; }
+      .txt-main { font-size: 14px; font-weight: 600; }
+      .txt-sub { font-size: 12px; font-weight: 500; }
+      .txt-badge { font-size: 14px; font-weight: 700; }
+    </style>
+
+    <!-- Organic sketch filter for shapes and lines (never text) -->
+    <filter id="roughen" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <!-- Arrowhead markers -->
+    <marker id="arr-blue" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0.5 L8,3 L0,5.5" fill="none" stroke="#2563EB" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-green" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0.5 L8,3 L0,5.5" fill="none" stroke="#16A34A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-orange" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0.5 L8,3 L0,5.5" fill="none" stroke="#EA580C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- MAIN TITLE -->
+  <g id="header">
+    <text x="480" y="38" text-anchor="middle" fill="#1E293B" class="txt-title">SCENARIOS MANAGEMENT WORKFLOW IN SIMANFOR WEB</text>
+  </g>
+
+  <!-- ================= 1. PREREQUISITES (BLUE #2563EB) ================= -->
+  <g filter="url(#roughen)" id="card-prereq">
+    <rect x="25" y="65" width="205" height="395" rx="8" fill="#2563EB0D" stroke="#2563EB" stroke-width="2.8" stroke-linecap="round"/>
+    <!-- Inventory Box -->
+    <rect x="37" y="105" width="181" height="100" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+    <!-- Model Box -->
+    <rect x="37" y="225" width="181" height="215" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+  </g>
+  <text x="127" y="90" text-anchor="middle" fill="#2563EB" class="txt-card-title">1. PREREQUISITES</text>
+
+  <!-- Inventory Content -->
+  <text x="127" y="125" text-anchor="middle" fill="#2563EB" class="txt-sec-title">WEB INVENTORY</text>
+  <text x="127" y="147" text-anchor="middle" fill="#1E293B" class="txt-sub">UPLOAD EXCEL FILE (.XLSX)</text>
+  <text x="127" y="167" text-anchor="middle" fill="#64748B" class="txt-sub">SHEET 1: PARCELAS</text>
+  <text x="127" y="187" text-anchor="middle" fill="#64748B" class="txt-sub">SHEET 2: PIESMAYORES</text>
+
+  <!-- Model Content -->
+  <text x="127" y="247" text-anchor="middle" fill="#2563EB" class="txt-sec-title">FOREST MODEL</text>
+  <text x="127" y="272" text-anchor="middle" fill="#1E293B" class="txt-main">CHECK CATALOG</text>
+  <text x="127" y="295" text-anchor="middle" fill="#64748B" class="txt-sub">SPECIES AND REGION</text>
+  <text x="127" y="318" text-anchor="middle" fill="#64748B" class="txt-sub">TYPE: TREE OR STAND</text>
+  <text x="127" y="348" text-anchor="middle" fill="#2563EB" class="txt-main">KEY TIME STEP:</text>
+  <text x="127" y="372" text-anchor="middle" fill="#1E293B" class="txt-sub">CHECK RECOMMENDED</text>
+  <text x="127" y="392" text-anchor="middle" fill="#1E293B" class="txt-sub">PROJECTION TIME (E.G. 5 YRS)</text>
+  <text x="127" y="420" text-anchor="middle" fill="#64748B" class="txt-sub">USED IN SCENARIO STEPS</text>
+
+  <!-- ARROW 1 -> 2 -->
+  <path d="M230,260 C242,255 248,255 258,260" fill="none" stroke="#2563EB" stroke-width="2.6" marker-end="url(#arr-blue)" filter="url(#roughen)"/>
+  <circle cx="245" cy="240" r="11" fill="white" stroke="#2563EB" stroke-width="2" filter="url(#roughen)"/>
+  <text x="245" y="240" text-anchor="middle" dominant-baseline="central" fill="#2563EB" class="txt-badge">1</text>
+
+  <!-- ================= 2. CONFIGURE SCENARIO (GREEN #16A34A) ================= -->
+  <g filter="url(#roughen)" id="card-config">
+    <rect x="260" y="65" width="225" height="395" rx="8" fill="#16A34A0D" stroke="#16A34A" stroke-width="2.8" stroke-linecap="round"/>
+    <!-- Scenario Header -->
+    <rect x="272" y="105" width="201" height="55" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.6"/>
+    <!-- Projection -->
+    <rect x="272" y="170" width="201" height="110" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.6"/>
+    <!-- Harvest -->
+    <rect x="272" y="290" width="201" height="150" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.6"/>
+  </g>
+  <text x="372" y="90" text-anchor="middle" fill="#16A34A" class="txt-card-title">2. DESIGN SCENARIO</text>
+
+  <!-- Scenario Header data -->
+  <text x="372" y="125" text-anchor="middle" fill="#16A34A" class="txt-sec-title">NEW SCENARIO</text>
+  <text x="372" y="145" text-anchor="middle" fill="#1E293B" class="txt-sub">ASSIGN NAME AND LINK</text>
+
+  <!-- Projection -->
+  <text x="372" y="190" text-anchor="middle" fill="#16A34A" class="txt-sec-title">APPLY PROJECTION</text>
+  <text x="372" y="212" text-anchor="middle" fill="#1E293B" class="txt-main">GROWTH AND MORTALITY</text>
+  <text x="372" y="235" text-anchor="middle" fill="#64748B" class="txt-sub">PERIOD (TIME = 5 YEARS)</text>
+  <text x="372" y="258" text-anchor="middle" fill="#64748B" class="txt-sub">AGE BOUNDS (MIN_AGE, MAX_AGE)</text>
+
+  <!-- Harvest -->
+  <text x="372" y="310" text-anchor="middle" fill="#16A34A" class="txt-sec-title">APPLY CUTTING</text>
+  <text x="372" y="332" text-anchor="middle" fill="#1E293B" class="txt-main">SILVICULTURAL TREATMENTS</text>
+  <text x="372" y="354" text-anchor="middle" fill="#64748B" class="txt-sub">TYPE (LOW, HIGH, SYSTEMATIC)</text>
+  <text x="372" y="375" text-anchor="middle" fill="#64748B" class="txt-sub">CRITERION (N, G, V) + INTENSITY %</text>
+  <text x="372" y="396" text-anchor="middle" fill="#64748B" class="txt-sub">EXECUTION TIME = 0</text>
+  <text x="372" y="418" text-anchor="middle" fill="#64748B" class="txt-sub">AGE BOUNDS (MIN_AGE, MAX_AGE)</text>
+
+  <!-- ARROW 2 -> 3 -->
+  <path d="M485,260 C495,255 502,255 512,260" fill="none" stroke="#16A34A" stroke-width="2.6" marker-end="url(#arr-green)" filter="url(#roughen)"/>
+  <circle cx="500" cy="240" r="11" fill="white" stroke="#16A34A" stroke-width="2" filter="url(#roughen)"/>
+  <text x="500" y="240" text-anchor="middle" dominant-baseline="central" fill="#16A34A" class="txt-badge">2</text>
+
+  <!-- ================= 3. ACTIONS AND RUN (ORANGE #EA580C) ================= -->
+  <g filter="url(#roughen)" id="card-actions">
+    <rect x="515" y="65" width="205" height="395" rx="8" fill="#EA580C0D" stroke="#EA580C" stroke-width="2.8" stroke-linecap="round"/>
+    <!-- Table actions -->
+    <rect x="527" y="105" width="181" height="155" rx="6" fill="#FFFFFF" stroke="#EA580C" stroke-width="1.6"/>
+    <!-- Run button -->
+    <rect x="527" y="270" width="181" height="170" rx="6" fill="#FFFFFF" stroke="#EA580C" stroke-width="1.6"/>
+  </g>
+  <text x="617" y="90" text-anchor="middle" fill="#EA580C" class="txt-card-title">3. PANEL AND ACTIONS</text>
+
+  <!-- Table actions -->
+  <text x="617" y="125" text-anchor="middle" fill="#EA580C" class="txt-sec-title">TABLE ACTIONS</text>
+  <text x="617" y="150" text-anchor="middle" fill="#1E293B" class="txt-main">DETAILS</text>
+  <text x="617" y="170" text-anchor="middle" fill="#64748B" class="txt-sub">REVIEW SCHEDULED STEPS</text>
+  <text x="617" y="195" text-anchor="middle" fill="#1E293B" class="txt-main">EDIT</text>
+  <text x="617" y="215" text-anchor="middle" fill="#64748B" class="txt-sub">ADD, MODIFY OR REMOVE STEPS</text>
+  <text x="617" y="240" text-anchor="middle" fill="#EF4444" class="txt-main">DELETE</text>
+
+  <!-- Run button -->
+  <text x="617" y="295" text-anchor="middle" fill="#EA580C" class="txt-sec-title">SERVER SIMULATION</text>
+  <text x="617" y="322" text-anchor="middle" fill="#16A34A" class="txt-main">RUN BUTTON</text>
+  <text x="617" y="345" text-anchor="middle" fill="#64748B" class="txt-sub">LOCATED INSIDE DETAILS MODAL</text>
+  <text x="617" y="375" text-anchor="middle" fill="#1E293B" class="txt-main">STATUS:</text>
+  <text x="617" y="398" text-anchor="middle" fill="#64748B" class="txt-sub">NOT_STARTED  (PENDING)</text>
+  <text x="617" y="418" text-anchor="middle" fill="#64748B" class="txt-sub">RUNNING -> F5 -> FINISHED</text>
+
+  <!-- ARROW 3 -> 4 -->
+  <path d="M720,260 C730,255 738,255 748,260" fill="none" stroke="#EA580C" stroke-width="2.6" marker-end="url(#arr-orange)" filter="url(#roughen)"/>
+  <circle cx="734" cy="240" r="11" fill="white" stroke="#EA580C" stroke-width="2" filter="url(#roughen)"/>
+  <text x="734" y="240" text-anchor="middle" dominant-baseline="central" fill="#EA580C" class="txt-badge">3</text>
+
+  <!-- ================= 4. RESULTS (PURPLE #7C3AED) ================= -->
+  <g filter="url(#roughen)" id="card-results">
+    <rect x="750" y="65" width="185" height="395" rx="8" fill="#7C3AED0D" stroke="#7C3AED" stroke-width="2.8" stroke-linecap="round"/>
+    <!-- Download -->
+    <rect x="762" y="105" width="161" height="110" rx="6" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.6"/>
+    <!-- Excel Sheets -->
+    <rect x="762" y="225" width="161" height="215" rx="6" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.6"/>
+  </g>
+  <text x="842" y="90" text-anchor="middle" fill="#7C3AED" class="txt-card-title">4. RESULTS</text>
+
+  <!-- Download -->
+  <text x="842" y="125" text-anchor="middle" fill="#7C3AED" class="txt-sec-title">FINISHED STATUS</text>
+  <text x="842" y="148" text-anchor="middle" fill="#1E293B" class="txt-main">RESULTS BUTTON</text>
+  <text x="842" y="172" text-anchor="middle" fill="#64748B" class="txt-sub">DOWNLOAD .ZIP BUNDLE</text>
+  <text x="842" y="195" text-anchor="middle" fill="#64748B" class="txt-sub">ONE .XLSX PER PLOT</text>
+
+  <!-- Excel Sheets -->
+  <text x="842" y="247" text-anchor="middle" fill="#7C3AED" class="txt-sec-title">EXCEL SHEETS</text>
+  <text x="842" y="272" text-anchor="middle" fill="#1E293B" class="txt-main">SUMMARY</text>
+  <text x="842" y="292" text-anchor="middle" fill="#64748B" class="txt-sub">YIELD TABLE</text>
+  <text x="842" y="317" text-anchor="middle" fill="#1E293B" class="txt-main">DIAGNOSIS</text>
+  <text x="842" y="337" text-anchor="middle" fill="#64748B" class="txt-sub">QUALITY CONTROL</text>
+  <text x="842" y="362" text-anchor="middle" fill="#1E293B" class="txt-main">PARCELAS</text>
+  <text x="842" y="382" text-anchor="middle" fill="#64748B" class="txt-sub">STAND EVOLUTION N, G, V</text>
+  <text x="842" y="407" text-anchor="middle" fill="#1E293B" class="txt-main">ARBOLES</text>
+  <text x="842" y="427" text-anchor="middle" fill="#64748B" class="txt-sub">TREE-LEVEL DYNAMICS</text>
+</svg>

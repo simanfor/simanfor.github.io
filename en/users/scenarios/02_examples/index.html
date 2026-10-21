@@ -1,0 +1,3207 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://simanfor.github.io/en/users/scenarios/02_examples/">
+      
+      
+        <link rel="prev" href="../01_scenarios/">
+      
+      
+        <link rel="next" href="../../outputs/01_outputs/">
+      
+      
+        
+          <link rel="alternate" href="../../../../users/scenarios/02_examples/" hreflang="es">
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/simanfor_tree.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Practical examples and comparison - SIMANFOR DOCS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Poppins";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#practical-examples-and-scenario-comparison" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../" title="SIMANFOR DOCS" class="md-header__button md-logo" aria-label="SIMANFOR DOCS" data-md-component="logo">
+      
+  <img src="../../../../assets/simanfor_tree.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SIMANFOR DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Practical examples and comparison
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <div class="md-header__option">
+  <div class="lang-toggle">
+    
+      
+        <a href="../../../../users/scenarios/02_examples/" hreflang="es" class="lang-toggle__item">
+          ES
+        </a>
+      
+    
+      
+        <span class="lang-toggle__item lang-toggle__item--active">EN</span>
+      
+    
+  </div>
+</div>
+    
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="SIMANFOR DOCS" class="md-nav__button md-logo" aria-label="SIMANFOR DOCS" data-md-component="logo">
+      
+  <img src="../../../../assets/simanfor_tree.png" alt="logo">
+
+    </a>
+    SIMANFOR DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Users guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Users guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/01_que_es_simanfor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is SIMANFOR?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/02_conceptos_clave/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Key concepts and simulation workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/03_vias_de_uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Platform execution pathways
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/04_videotutoriales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video tutorials and resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/05_preguntas_frecuentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frequently asked questions (FAQ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inventories/01_inventories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Models
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/02_harvest_models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harvest models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_3" id="__nav_2_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Individual-tree models
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Individual-tree models
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/calculate_height_Spain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Height calculation for Spain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/existencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yield model (Spain)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/IBEROPS_calibrated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPS (calibrated)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/IBEROPS_original/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPS (original)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/IBEROPT_calibrated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPT (calibrated)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/IBEROPT_original/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPT (original)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/mixed_models_Spain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixed stands of Spain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/pure_models_Spain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pure stands of Spain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Ppinea__and/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PINEA Andalucía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Ppinea__cat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PINEA in Catalonia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Ppinea__sc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PINEA Central System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Phalepensis__aragon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus halepensis in Aragón
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Phalepensis__cat_ar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus halepensis in Cataluña and Aragón
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Pnigra__cat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus nigra in Cataluña
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Psylvestris__cat_nat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris Catalonia natural stands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Psylvestris__cat_plant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris Catalonia plantations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Qpyrenaica__cyl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus pyrenaica in Castille and Leon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Qpyrenaica__liferebollo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus pyrenaica in Castille and Leon - Life+Reb Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/RAP_ORGANON/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAP-ORGANON, Alnus rubra plantations in Oregon and Washington (USA)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/SiTree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SiTree - Norway model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_4" id="__nav_2_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand-level models
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Stand-level models
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Bpubescens_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Betula pubescens in Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Cladanifer_stand__zam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cistus ladanifer in Zamora
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Romania_stand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand models for Romania
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Romania_stand_bau/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand models for Romania (BAU)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Pnigra_stand__CyL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus nigra in Castilla y León
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Ppinaster_at_stand__gal_coast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus pinaster in coastal areas of Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Ppinaster_at_stand__gal_inland/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus pinaster in inland areas of Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Ppinaster_m_stand__iberian_peninsula/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus pinaster mesogeensis in the Iberian Peninsula
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Pradiata_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus radiata in Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Psylvestris_stand__High_Ebro_Basin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris in the High Ebro Basin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Psylvestris_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris in Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Psylvestris_stand__Ukraine/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris in Ukraine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Populus_sp_stand__NE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Populus sp. in Northeast Spain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Qpetraea_stand__ccant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus petraea in the Cantabrian Mountains
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Qrobur_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus robur in Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/RETECHFOR_stand__cyl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RETECHFOR - Castilla y León
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/SILVES_stand__mad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SILVES - Pinus sylvestris in Madrid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/SILVES_stand__si-sc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SILVES - Pinus sylvestris in Iberian System and Central System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Tgrandis_stand__campeche/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tectona grandis in Campeche (Mexico)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenarios
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Scenarios
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_scenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practical examples and comparison
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practical examples and comparison
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-forest-stand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting forest stand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-silvicultural-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference silvicultural schedule
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-of-the-control-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design of the control scenario
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design of the control scenario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dasometric-logic-of-the-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dasometric logic of the control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-on-simanfor-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration on SIMANFOR web
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/01_outputs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outputs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../publications/01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Variables
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/02_identificacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory identification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/03_productividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand productivity and site quality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/04_dimensiones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Forest dimensions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/05_volumen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Timber volume
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/06_productos_madera/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wood products
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/07_biomasa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biomass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/08_carbono/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Carbon stock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/09_recursos_no_maderables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-wood products
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/10_dinamica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand dynamics and management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/11_competencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Density and competition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/12_estructura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stand structure and crowns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/13_diversidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biodiversity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/14_estacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Site quality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/15_clima/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Climate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/16_lidar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LiDAR metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-forest-stand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting forest stand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-silvicultural-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference silvicultural schedule
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-of-the-control-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design of the control scenario
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design of the control scenario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dasometric-logic-of-the-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dasometric logic of the control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-on-simanfor-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration on SIMANFOR web
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+  
+  
+                  
+
+
+
+<h1 id="practical-examples-and-scenario-comparison">Practical examples and scenario comparison</h1>
+<p>The design of silvicultural scenarios allows contrasting different management regimes on the same forest stand to evaluate their impact on growth, timber yield, and stand ecological stability.</p>
+<p>This guide details the parametrization of two contrasting silvicultural alternatives applied to the same starting stand:</p>
+<ol>
+<li><strong>Control scenario (no intervention)</strong>: the stand evolves naturally without silvicultural interventions, driven solely by biological growth and competition-induced natural mortality.</li>
+<li><strong>Technical management scenario based on scientific literature</strong>: implementation of a reference silvicultural regime for <em>Pinus pinaster</em> afforestation stands in Castilla y León for site quality 21, taken from the <em>Management manual for afforestation stands of Pinus pinaster Ait., Pinus sylvestris L. and Pinus nigra Arn. in Castilla y León</em> (<a href="https://www.researchgate.net/publication/265520003_Manual_de_gestion_para_masas_procedentes_de_repoblacion_de_Pinus_pinaster_Ait_Pinus_sylvestris_L_y_Pinus_nigra_Arn_en_Castilla_y_Leon">del Río et al., 2006</a>).</li>
+</ol>
+<hr />
+<h2 id="table-of-contents">Table of contents</h2>
+<ul>
+<li><a href="#starting-forest-stand">Starting forest stand</a></li>
+<li><a href="#reference-silvicultural-schedule">Reference silvicultural schedule</a></li>
+<li><a href="#design-of-the-control-scenario">Design of the control scenario</a></li>
+<li><a href="#design-of-the-technical-management-scenario">Design of the technical management scenario</a><ul>
+<li><a href="#intervention-at-25-years-first-thinning">Intervention at 25 years: first thinning</a></li>
+<li><a href="#intervention-at-35-years-second-thinning">Intervention at 35 years: second thinning</a></li>
+<li><a href="#intervention-at-45-years-third-thinning">Intervention at 45 years: third thinning</a></li>
+<li><a href="#intervention-at-55-years-fourth-thinning">Intervention at 55 years: fourth thinning</a></li>
+<li><a href="#reaching-rotation-age">Reaching rotation age</a></li>
+</ul>
+</li>
+<li><a href="#table-of-operations-in-simanfor-web">Table of operations in SIMANFOR web</a></li>
+<li><a href="#comparison-of-results-between-alternatives">Comparison of results between alternatives</a></li>
+<li><a href="#bibliographic-references">Bibliographic references</a></li>
+</ul>
+<hr />
+<h2 id="starting-forest-stand">Starting forest stand</h2>
+<p>The study case is located in an afforestation stand of maritime pine (<em>Pinus pinaster</em> Ait.) in Castilla y León, characterized by a high site quality defined by a site index of 21 meters at the reference age of 50 years ($SI = 21\text{ m}$).</p>
+<p>The dasometric variables of the stand at the start of the simulation (age 25 years, prior to the first intervention) are as follows:</p>
+<ul>
+<li><strong>Stand age ($E$ or $\text{Age}$)</strong>: 25 years</li>
+<li><strong>Stand density ($N$)</strong>: 1,500 stems/ha</li>
+<li><strong>Dominant height ($Ho$)</strong>: 12.1 m</li>
+<li><strong>Quadratic mean diameter ($Dg$)</strong>: 14.6 cm</li>
+<li><strong>Basal area ($G$)</strong>: 25.2 m²/ha</li>
+<li><strong>Total volume over bark ($V$)</strong>: 127.8 m³/ha</li>
+</ul>
+<p>To replicate this exercise directly on the SIMANFOR web platform, the pre-formatted Excel inventory file containing the two mandatory sheets (<code>Parcelas</code> and <code>PiesMayores</code>) is available for download:</p>
+<p><a href="../../../../users/scenarios/resources/inventario_ppinaster_cyl_calidad21.xlsx">Download sample initial inventory (inventario_ppinaster_cyl_calidad21.xlsx)</a></p>
+<p>Starting from this same initial inventory loaded onto the web platform, two independent management scenarios are configured to evaluate stand performance across a 65-year rotation.</p>
+<hr />
+<h2 id="reference-silvicultural-schedule">Reference silvicultural schedule</h2>
+<p>The silvicultural schedule proposed by <a href="https://www.researchgate.net/publication/265520003_Manual_de_gestion_para_masas_procedentes_de_repoblacion_de_Pinus_pinaster_Ait_Pinus_sylvestris_L_y_Pinus_nigra_Arn_en_Castilla_y_Leon">del Río et al. (2006)</a> for <em>Pinus pinaster</em> at site quality 21 establishes the following technical timeline:</p>
+<p><img alt="Silvicultural schedule for Pinus pinaster in site quality 21" src="../../../../users/scenarios/images/ppinaster_regimen_cyl_si21.png" /></p>
+<ul>
+<li><strong>10 to 15 years</strong>: if initial density exceeds 1,500 stems/ha, juvenile thinning (pre-commercial clearing) combined with low pruning.</li>
+<li><strong>25 years</strong>: first semi-systematic thinning with low thinning between rows.</li>
+<li><strong>33 years</strong>: second thinning from below.</li>
+<li><strong>42 years</strong>: third thinning from below.</li>
+<li><strong>52 years</strong>: fourth thinning from below.</li>
+<li><strong>65 years</strong>: final harvest (rotation age).</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Stand biological age and simulation starting point</p>
+<p>All timeline references in the silvicultural regime refer to <strong>stand biological age</strong>, not to elapsed years since simulation start.</p>
+<p>Since our sample inventory starts at <strong>25 years</strong> with 1,500 stems/ha, the simulation begins directly at that milestone. Consequently, modeling earlier juvenile treatments between ages 10 and 15 is unnecessary, as the initial stand is already positioned for its first commercial thinning.</p>
+</div>
+<hr />
+<h2 id="design-of-the-control-scenario">Design of the control scenario</h2>
+<p>The control scenario (commonly referred to as <em>No intervention</em>, natural succession, or walk-away management) simulates spontaneous stand development in the absence of any harvesting or silvicultural treatment.</p>
+<h3 id="dasometric-logic-of-the-control">Dasometric logic of the control</h3>
+<p>Because density remains unmanaged, the stand undergoes intense intra-specific competition for light, soil moisture, and nutrients:</p>
+<ul>
+<li>Individual tree diameter increment slows down substantially due to continuous crown closure.</li>
+<li>The height-to-diameter ratio (slenderness index, $H/Dg$) rises, increasing stand vulnerability to windthrow and snow damage.</li>
+<li>Natural mortality through self-thinning increases, accumulating standing and fallen deadwood that raises forest fire propagation risk.</li>
+</ul>
+<h3 id="configuration-on-simanfor-web">Configuration on SIMANFOR web</h3>
+<p>On the web platform, this scenario is set up as follows:</p>
+<ol>
+<li>Create a new scenario named <code>Pinus pinaster - Control no intervencion</code>.</li>
+<li>Select the uploaded inventory and the forest model. In this example, <a href="../../models/tree/IBEROPT_calibrated/">IBEROPT calibrated</a> is selected provisionally, as the specific stand dynamic model from <a href="https://www.researchgate.net/publication/265520003_Manual_de_gestion_para_masas_procedentes_de_repoblacion_de_Pinus_pinaster_Ait_Pinus_sylvestris_L_y_Pinus_nigra_Arn_en_Castilla_y_Leon">del Río et al. (2006)</a> is not yet implemented in the simulator.</li>
+<li>Schedule consecutive growth projections using the model standard time step (5 years) until reaching rotation age (65 years):<ul>
+<li>8 consecutive projections with <code>time = 5</code> (40 years of biological advance: $25 + 40 = 65\text{ years}$).</li>
+</ul>
+</li>
+<li>Do not add any operation of type <code>Aplicar Corta</code>.</li>
+</ol>
+<h1 id="todo-implement-in-the-simulator-the-dynamic-stand-model-by-del-rio-et-al-2006-for-pinus-pinaster-in-castilla-y-leon-and-update-this-example-replacing-iberopt-with-the-new-model">TODO: Implement in the simulator the dynamic stand model by Del Río et al. (2006) for Pinus pinaster in Castilla y León and update this example replacing IBEROPT with the new model.</h1>
+<hr />
+<h2 id="design-of-the-technical-management-scenario">Design of the technical management scenario</h2>
+<p>The second scenario translates technical prescriptions from scientific literature into specific simulator operations. Each intervention requires specifying the dasometric target variable ($N$, $G$, or $V$) and the exact harvesting intensity.</p>
+<p>In forest growth models within SIMANFOR, projections advance in discrete 5-year cycles (<code>time = 5</code>). To adapt theoretical intervention ages (25, 33, 42, 52, and 65 years) to standard 5-year intervals, thinnings are scheduled at the closest 5-year milestones: <strong>25, 35, 45, 55, and 65 years</strong>. Exactly two 5-year projection cycles (10 years of growth) elapse between consecutive thinning events.</p>
+<h3 id="intervention-at-25-years-first-thinning">Intervention at 25 years: first thinning</h3>
+<p>At age 25, reference prescription values are:</p>
+<ul>
+<li><strong>Pre-thinning stand</strong>: $N = 1,500\text{ stems/ha}$, $G = 25.2\text{ m}^2/\text{ha}$, $V = 127.8\text{ m}^3/\text{ha}$.</li>
+<li><strong>Extracted volume and trees</strong>: $N = 550\text{ stems/ha}$, $V = 38.7\text{ m}^3/\text{ha}$.</li>
+<li><strong>Residual stand</strong>: $N = 950\text{ stems/ha}$, $G = 17.7\text{ m}^2/\text{ha}$, $V = 89.1\text{ m}^3/\text{ha}$.</li>
+</ul>
+<p>Total extraction intensity relative to stand density is:</p>
+<p>$$\text{Total intensity} = \left(\frac{550}{1,500}\right) \cdot 100 = 36.7\,\%$$</p>
+<p>Because the prescription calls for a <strong>semi-systematic thinning</strong> (combining row extraction with selective thinning from below between rows), it is configured in SIMANFOR via two consecutive steps at simulation start (execution time = 0):</p>
+<ol>
+<li><strong>Step 1: Systematic cutting (skid trail opening)</strong>:</li>
+<li>Model: <code>Corta sistemática</code></li>
+<li>Criterion: <code>Densidad</code></li>
+<li>Intensity: opening 1 row every 5 lines ($\approx 20\,\%$ systematic removal). This removes 300 stems/ha ($1,500 \cdot 0.20 = 300$), leaving 1,200 stems/ha.</li>
+<li><strong>Step 2: Thinning from below (selection between rows)</strong>:</li>
+<li>Model: <code>Corta por lo bajo</code></li>
+<li>Criterion: <code>Densidad</code></li>
+<li>Intensity: 250 stems/ha remain to be extracted ($550 - 300 = 250$) out of the 1,200 remaining trees:
+     $$\text{Intensity from below} = \left(\frac{250}{1,200}\right) \cdot 100 = 20.8\,\%$$</li>
+</ol>
+<p>This approach extracts exactly the targeted 550 stems/ha while maintaining the prescribed semi-systematic spatial structure.</p>
+<h3 id="intervention-at-35-years-second-thinning">Intervention at 35 years: second thinning</h3>
+<p>Following the first thinning, the stand grows for 10 years through two consecutive 5-year projections to reach 35 years of biological age (practical adaptation of the 33-year literature milestone).</p>
+<p>At this age, target values are:</p>
+<ul>
+<li><strong>Pre-thinning stand</strong>: $N = 950\text{ stems/ha}$, $G = 34.6\text{ m}^2/\text{ha}$, $V = 224.2\text{ m}^3/\text{ha}$.</li>
+<li><strong>Extracted trees</strong>: $N = 350\text{ stems/ha}$, $V = 63.7\text{ m}^3/\text{ha}$.</li>
+<li><strong>Residual stand</strong>: $N = 600\text{ stems/ha}$, $G = 25.0\text{ m}^2/\text{ha}$, $V = 160.4\text{ m}^3/\text{ha}$.</li>
+</ul>
+<p>A thinning step from below is scheduled at execution time <code>0</code>:</p>
+<ul>
+<li><strong>Harvest model</strong>: <code>Corta por lo bajo</code></li>
+<li><strong>Execution time</strong>: <code>0</code></li>
+<li><strong>Criterion and intensity</strong>:</li>
+<li>By density ($N$): $(350 / 950) \cdot 100 = 36.8\,\%$</li>
+<li><em>(Alternatively, by basal area: $((34.6 - 25.0) / 34.6) \cdot 100 = 27.7\,\%$, or by volume: $(63.7 / 224.2) \cdot 100 = 28.4\,\%$)</em></li>
+<li><strong>Age bounds</strong>: <code>min_age = 33</code>, <code>max_age = 37</code>.</li>
+</ul>
+<h3 id="intervention-at-45-years-third-thinning">Intervention at 45 years: third thinning</h3>
+<p>The stand is projected across two additional 5-year cycles (10 accumulated years) from age 35 to age 45 (adaptation of the 42-year milestone).</p>
+<p>At age 45, literature values indicate:</p>
+<ul>
+<li><strong>Pre-thinning stand</strong>: $N = 600\text{ stems/ha}$, $G = 40.7\text{ m}^2/\text{ha}$, $V = 313.6\text{ m}^3/\text{ha}$.</li>
+<li><strong>Extracted trees</strong>: $N = 200\text{ stems/ha}$, $V = 88.3\text{ m}^3/\text{ha}$.</li>
+<li><strong>Residual stand</strong>: $N = 400\text{ stems/ha}$, $G = 29.4\text{ m}^2/\text{ha}$, $V = 225.3\text{ m}^3/\text{ha}$.</li>
+</ul>
+<p>The following thinning step is scheduled:</p>
+<ul>
+<li><strong>Harvest model</strong>: <code>Corta por lo bajo</code></li>
+<li><strong>Execution time</strong>: <code>0</code></li>
+<li><strong>Intensity based on density ($N$)</strong>:
+  $$\text{Intensity} = \left(\frac{200}{600}\right) \cdot 100 = 33.3\,\%$$
+  <em>(Alternatively, on basal area: $27.8\,\%$ of $G$, or on volume: $28.2\,\%$ of $V$).</em></li>
+<li><strong>Age bounds</strong>: <code>min_age = 43</code>, <code>max_age = 47</code>.</li>
+</ul>
+<h3 id="intervention-at-55-years-fourth-thinning">Intervention at 55 years: fourth thinning</h3>
+<p>The stand is projected once again over 10 years (two 5-year projections) from age 45 to age 55 (adaptation of the 52-year milestone).</p>
+<p>At age 55, target values are:</p>
+<ul>
+<li><strong>Pre-thinning stand</strong>: $N = 400\text{ stems/ha}$, $G = 43.9\text{ m}^2/\text{ha}$, $V = 383.0\text{ m}^3/\text{ha}$.</li>
+<li><strong>Extracted trees</strong>: $N = 125\text{ stems/ha}$, $V = 103.3\text{ m}^3/\text{ha}$.</li>
+<li><strong>Residual stand</strong>: $N = 275\text{ stems/ha}$, $G = 32.3\text{ m}^2/\text{ha}$, $V = 279.7\text{ m}^3/\text{ha}$.</li>
+</ul>
+<p>The final commercial thinning is configured:</p>
+<ul>
+<li><strong>Harvest model</strong>: <code>Corta por lo bajo</code></li>
+<li><strong>Execution time</strong>: <code>0</code></li>
+<li><strong>Intensity based on density ($N$)</strong>:
+  $$\text{Intensity} = \left(\frac{125}{400}\right) \cdot 100 = 31.3\,\%$$
+  <em>(Or $26.4\,\%$ on $G$, or $27.0\,\%$ on $V$).</em></li>
+<li><strong>Age bounds</strong>: <code>min_age = 53</code>, <code>max_age = 57</code>.</li>
+</ul>
+<h3 id="reaching-rotation-age">Reaching rotation age</h3>
+<p>From age 55 to age 65, the final 10 years of rotation unfold via two consecutive 5-year projections. The 275 selected crop trees per hectare reach the final rotation age of 65 years.</p>
+<p>At age 65, the stand accumulates the following final standing inventory:</p>
+<ul>
+<li><strong>Stand density ($N$)</strong>: 275 stems/ha</li>
+<li><strong>Quadratic mean diameter ($Dg$)</strong>: 45.9 cm</li>
+<li><strong>Dominant height ($Ho$)</strong>: 23.9 m</li>
+<li><strong>Basal area ($G$)</strong>: 45.5 m²/ha</li>
+<li><strong>Final standing volume over bark ($V$)</strong>: 439.0 m³/ha</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Do not schedule a 100 % clearcut at rotation age</p>
+<p>As explained in the general scenarios guide, do not schedule a 100 % final cut at age 65. If a clearcut is applied, the Excel output workbook will report zero standing stock at the final node. The simulation must end on the final projection so that the harvestable stock can be evaluated in the <code>Summary</code> and <code>Plots</code> sheets.</p>
+</div>
+<hr />
+<h2 id="table-of-operations-in-simanfor-web">Table of operations in SIMANFOR web</h2>
+<p>The following table summarizes the complete 13-step chronological sequence entered into the web interface for the managed scenario, where all projections advance in 5-year steps (<code>time = 5</code>):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Step</th>
+<th style="text-align: left;">Web operation</th>
+<th style="text-align: left;">Main parameters</th>
+<th style="text-align: center;">Age bounds (<code>min_age</code> - <code>max_age</code>)</th>
+<th style="text-align: left;">Silvicultural objective</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><code>Aplicar Corta</code></td>
+<td style="text-align: left;">Systematic, $N = 20.0\,\%$, <code>time = 0</code></td>
+<td style="text-align: center;">23 - 27</td>
+<td style="text-align: left;">Skid trail opening (age 25)</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><code>Aplicar Corta</code></td>
+<td style="text-align: left;">From below, $N = 20.8\,\%$, <code>time = 0</code></td>
+<td style="text-align: center;">23 - 27</td>
+<td style="text-align: left;">Selection between rows (age 25)</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"><code>Aplicar Proyección</code></td>
+<td style="text-align: left;"><code>time = 5</code></td>
+<td style="text-align: center;">25 - 31</td>
+<td style="text-align: left;">Growth from 25 to 30 years</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"><code>Aplicar Proyección</code></td>
+<td style="text-align: left;"><code>time = 5</code></td>
+<td style="text-align: center;">30 - 36</td>
+<td style="text-align: left;">Growth from 30 to 35 years</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><code>Aplicar Corta</code></td>
+<td style="text-align: left;">From below, $N = 36.8\,\%$, <code>time = 0</code></td>
+<td style="text-align: center;">33 - 37</td>
+<td style="text-align: left;">2nd thinning: reduction to 600 stems/ha (age 35)</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;"><code>Aplicar Proyección</code></td>
+<td style="text-align: left;"><code>time = 5</code></td>
+<td style="text-align: center;">35 - 41</td>
+<td style="text-align: left;">Growth from 35 to 40 years</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;"><code>Aplicar Proyección</code></td>
+<td style="text-align: left;"><code>time = 5</code></td>
+<td style="text-align: center;">40 - 46</td>
+<td style="text-align: left;">Growth from 40 to 45 years</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;"><code>Aplicar Corta</code></td>
+<td style="text-align: left;">From below, $N = 33.3\,\%$, <code>time = 0</code></td>
+<td style="text-align: center;">43 - 47</td>
+<td style="text-align: left;">3rd thinning: reduction to 400 stems/ha (age 45)</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;"><code>Aplicar Proyección</code></td>
+<td style="text-align: left;"><code>time = 5</code></td>
+<td style="text-align: center;">45 - 51</td>
+<td style="text-align: left;">Growth from 45 to 50 years</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;"><code>Aplicar Proyección</code></td>
+<td style="text-align: left;"><code>time = 5</code></td>
+<td style="text-align: center;">50 - 56</td>
+<td style="text-align: left;">Growth from 50 to 55 years</td>
+</tr>
+<tr>
+<td style="text-align: center;">11</td>
+<td style="text-align: left;"><code>Aplicar Corta</code></td>
+<td style="text-align: left;">From below, $N = 31.3\,\%$, <code>time = 0</code></td>
+<td style="text-align: center;">53 - 57</td>
+<td style="text-align: left;">4th thinning: reduction to 275 stems/ha (age 55)</td>
+</tr>
+<tr>
+<td style="text-align: center;">12</td>
+<td style="text-align: left;"><code>Aplicar Proyección</code></td>
+<td style="text-align: left;"><code>time = 5</code></td>
+<td style="text-align: center;">55 - 61</td>
+<td style="text-align: left;">Growth from 55 to 60 years</td>
+</tr>
+<tr>
+<td style="text-align: center;">13</td>
+<td style="text-align: left;"><code>Aplicar Proyección</code></td>
+<td style="text-align: left;"><code>time = 5</code></td>
+<td style="text-align: center;">60 - 66</td>
+<td style="text-align: left;">Final growth to rotation age (age 65)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Use of age bounds (<code>min_age</code> and <code>max_age</code>)</p>
+<p>Defining an age range using <code>min_age</code> and <code>max_age</code> is only necessary when the uploaded inventory contains <strong>multiple plots with heterogeneous ages</strong>. In that case, age bounds act as a conditional filter so that a thinning or treatment triggers only on stands whose current age falls within the specified window.</p>
+<p>When the inventory consists of <strong>a single plot</strong> (as in this sample exercise) or multiple even-aged plots sharing the same initial age, configuring these fields is optional, as operations execute sequentially step by step in the scheduled chronological order.</p>
+</div>
+<hr />
+<h2 id="comparison-of-results-between-alternatives">Comparison of results between alternatives</h2>
+<p>When downloading the Excel workbooks from both simulations and inspecting the <code>Summary</code> and <code>Plots</code> sheets, results demonstrate two completely distinct silvicultural trajectories:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Dasometric variable at rotation (65 years)</th>
+<th style="text-align: center;">Scenario 1: Control (no intervention)</th>
+<th style="text-align: center;">Scenario 2: Technical management regime</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Residual density ($N$)</strong></td>
+<td style="text-align: center;">High (reduced only by self-thinning)</td>
+<td style="text-align: center;">275 stems/ha (regulated density)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Quadratic mean diameter ($Dg$)</strong></td>
+<td style="text-align: center;">Low (growth stagnation through competition)</td>
+<td style="text-align: center;"><strong>45.9 cm</strong> (large high-value timber)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Thinning extracted volume ($\sum V_{\text{cortas}}$)</strong></td>
+<td style="text-align: center;">0 m³/ha</td>
+<td style="text-align: center;"><strong>294.0 m³/ha</strong> ($38.7 + 63.7 + 88.3 + 103.3$)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Final standing volume ($V_{\text{final}}$)</strong></td>
+<td style="text-align: center;">Variable (high proportion of slender/dead stems)</td>
+<td style="text-align: center;"><strong>439.0 m³/ha</strong> (premium sawtimber)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total volumetric yield</strong></td>
+<td style="text-align: center;">Lower merchantable yield</td>
+<td style="text-align: center;"><strong>733.0 m³/ha</strong> ($294.0 + 439.0$)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Fire and pest vulnerability</strong></td>
+<td style="text-align: center;">High (fuel load accumulation and crown continuity)</td>
+<td style="text-align: center;">Low (horizontal discontinuity and vigorous crowns)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Slenderness coefficient ($H/Dg$)</strong></td>
+<td style="text-align: center;">High (slender stems, lower stability against snow)</td>
+<td style="text-align: center;">Balanced (sturdy stems with greater taper)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="technical-conclusions">Technical conclusions</h3>
+<ol>
+<li><strong>Growth concentration effect</strong>: The four commercial thinnings do not reduce cumulative stand volume; rather, they channel available light, soil water, and nutrients into the 275 crop trees, achieving a quadratic mean diameter of 45.9 cm at rotation.</li>
+<li><strong>Intermediate timber revenue</strong>: The managed scenario provides 294 m³/ha of merchantable timber across four separate harvest events, generating regular financial returns throughout the rotation.</li>
+<li><strong>Stand resilience</strong>: In the unmanaged control, elevated stocking levels produce slender trees prone to wind and snow damage, while heavy suppression mortality increases ground fuel loads. Active silviculture enhances structural stability and adaptive capacity against environmental disturbances.</li>
+</ol>
+<hr />
+<h2 id="bibliographic-references">Bibliographic references</h2>
+<ul>
+<li>del Río, M., López, E., Montero, G. (2006). <em>Manual de gestión para masas procedentes de repoblación de Pinus pinaster Ait., Pinus sylvestris L. y Pinus nigra Arn. en Castilla y León</em>. Junta de Castilla y León. Consejería de Medio Ambiente. Available at: <a href="https://www.researchgate.net/publication/265520003_Manual_de_gestion_para_masas_procedentes_de_repoblacion_de_Pinus_pinaster_Ait_Pinus_sylvestris_L_y_Pinus_nigra_Arn_en_Castilla_y_Leon">ResearchGate</a>.</li>
+<li>Technical documentation of <a href="../../models/tree/IBEROPT_calibrated/">IBEROPT calibrated</a>.</li>
+<li>Methodological guide on <a href="../../models/02_harvest_models/">Harvest models and silvicultural treatments</a>.</li>
+</ul>
+<hr />
+<p><em>Translated using AI translation assistant.</em></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

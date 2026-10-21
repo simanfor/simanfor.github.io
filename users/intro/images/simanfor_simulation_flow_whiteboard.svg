@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="100%" height="100%">
+  <defs>
+    <filter id="roughen" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 1 2 L 8 5 L 1 8 Z" fill="#2563EB" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 1 2 L 8 5 L 1 8 Z" fill="#16A34A" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 1 2 L 8 5 L 1 8 Z" fill="#9333EA" />
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 1 2 L 8 5 L 1 8 Z" fill="#EA580C" />
+    </marker>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&amp;display=swap');
+    text {
+      font-family: 'Caveat', cursive, sans-serif;
+      text-anchor: middle;
+    }
+    .title-main { font-size: 26px; font-weight: 700; fill: #1E293B; letter-spacing: 1px; }
+    .subtitle-main { font-size: 16px; font-weight: 600; fill: #64748B; }
+    .card-title { font-size: 20px; font-weight: 700; }
+    .card-text { font-size: 14px; font-weight: 600; fill: #334155; }
+    .badge-text { font-size: 15px; font-weight: 700; fill: #FFFFFF; }
+    .step-num { font-size: 16px; font-weight: 700; fill: #FFFFFF; }
+  </style>
+
+  <!-- Background Whiteboard -->
+  <rect width="1000" height="560" fill="#FFFFFF" />
+
+  <!-- Header Title -->
+  <text x="500" y="42" class="title-main">EL FLUJO DASOMETRICO DE SIMANFOR</text>
+  <text x="500" y="68" class="subtitle-main">DE LOS DATOS DE CAMPO A LA EVALUACION DE ALTERNATIVAS SELVICOLAS</text>
+
+  <!-- ==================== 1. INVENTARIO (AZUL) ==================== -->
+  <g transform="translate(40, 110)">
+    <!-- Box -->
+    <path filter="url(#roughen)" d="M 10 0 C 70 -3, 190 2, 250 0 C 253 45, 248 100, 250 145 C 190 148, 70 142, 0 145 C -3 100, 2 45, 0 0 Z" 
+          fill="#EFF6FF" stroke="#2563EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Step Badge -->
+    <circle cx="20" cy="15" r="14" fill="#2563EB" />
+    <text x="20" y="20" class="step-num">1</text>
+    <!-- Text -->
+    <text x="135" y="40" class="card-title" fill="#1D4ED8">INVENTARIO FORESTAL</text>
+    <text x="135" y="70" class="card-text">ESTADO ACTUAL DE LA MASA</text>
+    <text x="135" y="94" class="card-text">HOJAS: PARCELAS Y ARBOLES</text>
+    <text x="135" y="118" class="card-text">MEDICIONES: DAP, ALTURA, EXPAN</text>
+  </g>
+
+  <!-- ==================== 2. MODELO + PARAMETRIZACION (VERDE) ==================== -->
+  <g transform="translate(40, 280)">
+    <!-- Box -->
+    <path filter="url(#roughen)" d="M 0 0 C 65 3, 185 -2, 250 0 C 252 50, 247 110, 250 160 C 185 158, 65 162, 0 160 C 2 110, -2 50, 0 0 Z" 
+          fill="#F0FDF4" stroke="#16A34A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Step Badge -->
+    <circle cx="20" cy="15" r="14" fill="#16A34A" />
+    <text x="20" y="20" class="step-num">2</text>
+    <!-- Text -->
+    <text x="135" y="40" class="card-title" fill="#15803D">MODELO Y PARAMETROS</text>
+    <text x="135" y="70" class="card-text">MOTOR BIOMETRICO DE CRECIMIENTO</text>
+    <text x="135" y="94" class="card-text">ECUACIONES DE D, H Y MORTALIDAD</text>
+    <text x="135" y="118" class="card-text">PARAMETRIZACION ESPECIFICA</text>
+    <text x="135" y="142" class="card-text">(ESPECIE, REGION Y CONDICIONES)</text>
+  </g>
+
+  <!-- ==================== 3. ESCENARIO SELVICOLA (PURPURA) ==================== -->
+  <g transform="translate(375, 410)">
+    <!-- Box -->
+    <path filter="url(#roughen)" d="M 0 0 C 70 -2, 180 3, 250 0 C 253 35, 248 85, 250 125 C 180 128, 70 122, 0 125 C -2 85, 2 35, 0 0 Z" 
+          fill="#FAF5FF" stroke="#9333EA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Step Badge -->
+    <circle cx="20" cy="15" r="14" fill="#9333EA" />
+    <text x="20" y="20" class="step-num">3</text>
+    <!-- Text -->
+    <text x="135" y="38" class="card-title" fill="#7E22CE">ESCENARIO SELVICOLA</text>
+    <text x="135" y="68" class="card-text">PRESCRIPCION DEL GESTOR</text>
+    <text x="135" y="92" class="card-text">PROYECCIONES TEMPORALES</text>
+    <text x="135" y="114" class="card-text">CLARAS Y CORTAS PROGRAMADAS</text>
+  </g>
+
+  <!-- ==================== CENTRAL: SIMULADOR (GRIS/OSCURO) ==================== -->
+  <g transform="translate(370, 150)">
+    <!-- Central Hub Box -->
+    <path filter="url(#roughen)" d="M 0 0 C 75 -4, 185 3, 260 0 C 263 60, 258 140, 260 200 C 185 204, 75 197, 0 200 C -3 140, 3 60, 0 0 Z" 
+          fill="#F8FAFC" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Content -->
+    <text x="130" y="44" class="card-title" fill="#0F172A">SIMANFOR</text>
+    <text x="130" y="70" class="card-text" fill="#0F172A">SISTEMA DE APOYO A LA DECISION</text>
+    
+    <path filter="url(#roughen)" d="M 25 88 C 75 86, 175 90, 235 88" stroke="#CBD5E1" stroke-width="2" fill="none" />
+    
+    <text x="130" y="112" class="card-text" fill="#475569">1. INICIALIZACION Y CURVAS H/D</text>
+    <text x="130" y="136" class="card-text" fill="#475569">2. DINAMICA: CRECIMIENTO Y MUERTE</text>
+    <text x="130" y="160" class="card-text" fill="#475569">3. EJECUCION DE INTERVENCIONES</text>
+    <text x="130" y="184" class="card-text" fill="#475569">4. CUBICACION Y CLASIFICACION</text>
+  </g>
+
+  <!-- ==================== 4. RESULTADOS (NARANJA) ==================== -->
+  <g transform="translate(710, 175)">
+    <!-- Box -->
+    <path filter="url(#roughen)" d="M 0 0 C 70 -3, 190 2, 250 0 C 253 45, 247 110, 250 155 C 190 158, 70 152, 0 155 C -3 110, 2 45, 0 0 Z" 
+          fill="#FFF7ED" stroke="#EA580C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Step Badge -->
+    <circle cx="20" cy="15" r="14" fill="#EA580C" />
+    <text x="20" y="20" class="step-num">4</text>
+    <!-- Text -->
+    <text x="135" y="40" class="card-title" fill="#C2410C">RESULTADOS Y SALIDAS</text>
+    <text x="135" y="70" class="card-text">TABLAS EXCEL POR PARCELA</text>
+    <text x="135" y="94" class="card-text">SUMMARY: EVOLUCION RODAL (N, G, V)</text>
+    <text x="135" y="118" class="card-text">CARBONO Y BIOMASA CALCULADOS</text>
+    <text x="135" y="142" class="card-text">INFORME DE DIAGNOSTICO</text>
+  </g>
+
+  <!-- ==================== CONNECTIONS / ARROWS ==================== -->
+  <!-- 1 -> SIMULADOR -->
+  <path filter="url(#roughen)" d="M 292 185 C 320 185, 340 200, 368 210" fill="none" stroke="#2563EB" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-blue)" />
+  
+  <!-- 2 -> SIMULADOR -->
+  <path filter="url(#roughen)" d="M 292 360 C 320 360, 340 330, 368 310" fill="none" stroke="#16A34A" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-green)" />
+  
+  <!-- 3 -> SIMULADOR -->
+  <path filter="url(#roughen)" d="M 500 408 C 500 385, 500 370, 500 355" fill="none" stroke="#9333EA" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-purple)" />
+  
+  <!-- SIMULADOR -> 4 -->
+  <path filter="url(#roughen)" d="M 632 250 C 655 250, 680 250, 706 250" fill="none" stroke="#EA580C" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow-orange)" />
+
+</svg>

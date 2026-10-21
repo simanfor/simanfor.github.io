@@ -1,0 +1,3328 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://simanfor.github.io/users/intro/02_conceptos_clave/">
+      
+      
+        <link rel="prev" href="../01_que_es_simanfor/">
+      
+      
+        <link rel="next" href="../03_vias_de_uso/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="es">
+        
+          <link rel="alternate" href="../../../en/users/intro/02_conceptos_clave/" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../../assets/simanfor_tree.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Conceptos clave y flujo de simulación - SIMANFOR DOCS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Poppins";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#conceptos-clave-y-flujo-de-simulacion" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="SIMANFOR DOCS" class="md-header__button md-logo" aria-label="SIMANFOR DOCS" data-md-component="logo">
+      
+  <img src="../../../assets/simanfor_tree.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SIMANFOR DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Conceptos clave y flujo de simulación
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <div class="md-header__option">
+  <div class="lang-toggle">
+    
+      
+        <span class="lang-toggle__item lang-toggle__item--active">ES</span>
+      
+    
+      
+        <a href="../../../en/users/intro/02_conceptos_clave/" hreflang="en" class="lang-toggle__item">
+          EN
+        </a>
+      
+    
+  </div>
+</div>
+    
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="SIMANFOR DOCS" class="md-nav__button md-logo" aria-label="SIMANFOR DOCS" data-md-component="logo">
+      
+  <img src="../../../assets/simanfor_tree.png" alt="logo">
+
+    </a>
+    SIMANFOR DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía para usuarios
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guía para usuarios
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Primeros pasos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Primeros pasos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_que_es_simanfor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Qué es SIMANFOR?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conceptos clave y flujo de simulación
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conceptos clave y flujo de simulación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenido
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-mental-y-triada-de-simulacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelo mental y tríada de simulación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definiciones-formales-en-selvicultura-cuantitativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definiciones formales en selvicultura cuantitativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definiciones formales en selvicultura cuantitativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias bibliográficas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-modelos-forestales-en-simanfor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de modelos forestales en SIMANFOR
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de modelos forestales en SIMANFOR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-segun-la-unidad-minima-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Según la unidad mínima de trabajo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-segun-la-posicion-espacial-de-los-arboles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Según la posición espacial de los árboles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-segun-la-composicion-de-especies-de-la-masa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Según la composición de especies de la masa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-segun-su-capacidad-de-proyeccion-en-el-tiempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Según su capacidad de proyección en el tiempo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-el-papel-de-la-parametrizacion-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. El papel de la parametrización local
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operaciones-y-tratamientos-selvicolas-soportados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operaciones y tratamientos selvícolas soportados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operaciones y tratamientos selvícolas soportados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-proyecciones-de-crecimiento-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Proyecciones de crecimiento (EXECUTION)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cortas-y-tratamientos-selvicolas-harvest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Cortas y tratamientos selvícolas (HARVEST)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tratamientos-y-actividades-no-disponibles-actualmente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tratamientos y actividades no disponibles actualmente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glosario-dasometrico-rapido-y-fuentes-de-consulta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Glosario dasométrico rápido y fuentes de consulta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Glosario dasométrico rápido y fuentes de consulta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fuentes-de-referencia-externa-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuentes de referencia externa recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#siguientes-pasos-recomendados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Siguientes pasos recomendados
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_vias_de_uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vías de uso de la plataforma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_videotutoriales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Videotutoriales y recursos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_preguntas_frecuentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preguntas frecuentes (FAQ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inventories/01_inventories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice de modelos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/02_harvest_models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos de corta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_3" id="__nav_2_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos de árbol individual
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos de árbol individual
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/calculate_height_Spain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cálculo de alturas para España
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/existencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cálculo de existencias (España)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/IBEROPS_calibrated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPS (calibrado)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/IBEROPS_original/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPS (original)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/IBEROPT_calibrated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPT (calibrado)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/IBEROPT_original/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBEROPT (original)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/mixed_models_Spain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Masas Mixtas de España
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/pure_models_Spain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Masas Puras de España
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Ppinea__and/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PINEA Andalucía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Ppinea__cat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PINEA en Cataluña
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Ppinea__sc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PINEA Sistema Central
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Phalepensis__aragon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus halepensis en Aragón
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Phalepensis__cat_ar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus halepensis en Cataluña y Aragón
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Pnigra__cat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus nigra en Cataluña
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Psylvestris__cat_nat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris Cataluña masas naturales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Psylvestris__cat_plant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris Cataluña plantaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Qpyrenaica__cyl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus pyrenaica en Castilla y León
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/Qpyrenaica__liferebollo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus pyrenaica en Castilla y León - Proyecto Life+Reb
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/RAP_ORGANON/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAP-ORGANON, plantaciones de Alnus rubra en Oregón y Washington (EEUU)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/tree/SiTree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SiTree - Modelo de Noruega
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_4" id="__nav_2_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos de masa
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos de masa
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Bpubescens_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Betula pubescens en Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Cladanifer_stand__zam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cistus ladanifer en Zamora
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Romania_stand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos de masa para Rumanía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Romania_stand_bau/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos de masa para Rumanía (BAU)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Pnigra_stand__CyL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus nigra en Castilla y León
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Ppinaster_at_stand__gal_coast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus pinaster en zonas costeras de Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Ppinaster_at_stand__gal_inland/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus pinaster en zonas interiores de Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Ppinaster_m_stand__iberian_peninsula/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus pinaster mesogeensis en la Península Ibérica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Pradiata_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus radiata en Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Psylvestris_stand__High_Ebro_Basin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris en el Alto Valle del Ebro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Psylvestris_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris en Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Psylvestris_stand__Ukraine/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pinus sylvestris en Ucrania
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Populus_sp_stand__NE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Populus sp. en el Noreste de España
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Qpetraea_stand__ccant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus petraea en la Cordillera Cantábrica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Qrobur_stand__gal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quercus robur en Galicia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/RETECHFOR_stand__cyl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RETECHFOR - Castilla y León
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/SILVES_stand__mad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SILVES - Pinus sylvestris en Madrid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/SILVES_stand__si-sc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SILVES - Pinus sylvestris en Sistema Ibérico y Sistema Central
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/stand/Tgrandis_stand__campeche/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tectona grandis en Campeche (México)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Escenarios
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Escenarios
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scenarios/01_scenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scenarios/02_examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejemplos prácticos y comparación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/01_outputs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resultados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../publications/01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publicaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Variables
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo de variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/02_identificacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Identificación del inventario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/03_productividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productividad y calidad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/04_dimensiones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dimensiones dasométricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/05_volumen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Volumen de madera
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/06_productos_madera/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productos maderables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/07_biomasa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biomasa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/08_carbono/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Carbono
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/09_recursos_no_maderables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productos no maderables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/10_dinamica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dinámica de la masa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/11_competencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Densidad y competencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/12_estructura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estructura y copas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/13_diversidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biodiversidad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/14_estacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calidad de estación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/15_clima/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clima
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/16_lidar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Métricas LiDAR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenido
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-mental-y-triada-de-simulacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelo mental y tríada de simulación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definiciones-formales-en-selvicultura-cuantitativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definiciones formales en selvicultura cuantitativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definiciones formales en selvicultura cuantitativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias bibliográficas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-modelos-forestales-en-simanfor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de modelos forestales en SIMANFOR
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de modelos forestales en SIMANFOR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-segun-la-unidad-minima-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Según la unidad mínima de trabajo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-segun-la-posicion-espacial-de-los-arboles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Según la posición espacial de los árboles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-segun-la-composicion-de-especies-de-la-masa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Según la composición de especies de la masa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-segun-su-capacidad-de-proyeccion-en-el-tiempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Según su capacidad de proyección en el tiempo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-el-papel-de-la-parametrizacion-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. El papel de la parametrización local
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operaciones-y-tratamientos-selvicolas-soportados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operaciones y tratamientos selvícolas soportados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operaciones y tratamientos selvícolas soportados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-proyecciones-de-crecimiento-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Proyecciones de crecimiento (EXECUTION)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cortas-y-tratamientos-selvicolas-harvest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Cortas y tratamientos selvícolas (HARVEST)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tratamientos-y-actividades-no-disponibles-actualmente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tratamientos y actividades no disponibles actualmente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glosario-dasometrico-rapido-y-fuentes-de-consulta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Glosario dasométrico rápido y fuentes de consulta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Glosario dasométrico rápido y fuentes de consulta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fuentes-de-referencia-externa-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuentes de referencia externa recomendadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#siguientes-pasos-recomendados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Siguientes pasos recomendados
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+  
+  
+                  
+
+
+
+<h1 id="conceptos-clave-y-flujo-de-simulacion">Conceptos clave y flujo de simulación</h1>
+<p>Para aprovechar el potencial de SIMANFOR y diseñar simulaciones con rigor técnico, conviene comprender el modelo conceptual sobre el que opera el simulador. En la práctica dasométrica se manejan términos como <em>modelo</em>, <em>simulador</em>, <em>escenario</em> o <em>parametrización</em>, conceptos que a menudo se confunden o se emplean de forma intercambiable pero que responden a roles computacionales y biológicos diferenciados.</p>
+<p>Esta guía establece el marco conceptual del simulador, clarifica la taxonomía de modelos disponibles y detalla qué operaciones selvícolas pueden ejecutarse en la plataforma.</p>
+<hr />
+<h2 id="contenido">Contenido</h2>
+<ul>
+<li><a href="#modelo-mental-y-triada-de-simulacion">Modelo mental y tríada de simulación</a></li>
+<li><a href="#definiciones-formales-en-selvicultura-cuantitativa">Definiciones formales en selvicultura cuantitativa</a></li>
+<li><a href="#tipos-de-modelos-forestales-en-simanfor">Tipos de modelos forestales en SIMANFOR</a></li>
+<li><a href="#operaciones-y-tratamientos-selvicolas-soportados">Operaciones y tratamientos selvícolas soportados</a></li>
+<li><a href="#tratamientos-y-actividades-no-disponibles-actualmente">Tratamientos y actividades no disponibles actualmente</a></li>
+<li><a href="#glosario-dasometrico-rapido-y-fuentes-de-consulta">Glosario dasométrico rápido y fuentes de consulta</a></li>
+<li><a href="#siguientes-pasos-recomendados">Siguientes pasos recomendados</a></li>
+</ul>
+<hr />
+<h2 id="modelo-mental-y-triada-de-simulacion">Modelo mental y tríada de simulación</h2>
+<p>Toda simulación en SIMANFOR articula tres elementos de entrada independientes para obtener un conjunto de resultados:</p>
+<p><img alt="El flujo dasométrico de SIMANFOR" src="../images/simanfor_simulation_flow_whiteboard.svg" /></p>
+<ol>
+<li><strong>El inventario forestal (los datos de partida):</strong> Describe el estado real de la masa en un momento dado ($t_0$). Puede tratarse de datos a nivel de pie individual (diámetro normal, altura y especie) o de variables dasométricas agregadas a nivel de rodal o parcela ($N$, $G$, $Ho$, edad).</li>
+<li><strong>El modelo forestal y su parametrización (el motor biofísico):</strong> Contiene las ecuaciones matemáticas que reproducen el comportamiento biológico de la masa. Dicta cómo crecen los árboles en diámetro y altura, cuántos mueren por competencia o senescencia natural y cómo se incorpora el regenerado al estrato medible.</li>
+<li><strong>El escenario selvícola (la prescripción técnica):</strong> Define el calendario de gestión diseñado por el usuario. Es la secuencia cronológica de etapas de proyección temporal en las que la masa crece y etapas de intervención selvícola en las que se extraen árboles mediante claras o cortas.</li>
+<li><strong>El simulador SIMANFOR (el integrador computacional):</strong> Lee el inventario, inicializa variables secundarias que no hayan sido medidas en campo (mediante submodelos de curvas altura-diámetro), aplica las leyes biológicas del modelo paso a paso según el escenario programado y genera los libros de resultados.</li>
+<li><strong>Los resultados (la información para decidir):</strong> Archivos tabulares en formato Excel que detallan la trayectoria dasométrica completa de cada parcela simulada: evolución de densidades, áreas basimétricas, volúmenes con y sin corteza, cubicación por clases comerciales, biomasa, stock de carbono y otras variables de interés.</li>
+</ol>
+<hr />
+<h2 id="definiciones-formales-en-selvicultura-cuantitativa">Definiciones formales en selvicultura cuantitativa</h2>
+<p>Con el fin de conocer la terminología utilizada en esta documentación, SIMANFOR adopta las definiciones formales consolidadas en la literatura dasométrica internacional:</p>
+<ul>
+<li><strong>Compromisos/equilibrios entre servicios ecosistémicos (<em>Trade-offs</em>):</strong> Balance o intercambio en el que la optimización o incremento de un beneficio ecológico o económico conlleva la reducción de otro beneficio, requiriendo sopesar opciones en el proceso de toma de decisiones (Helms, 1998).</li>
+<li><strong>Escenario selvícola (<em>Scenario</em>):</strong> Itinerario o secuencia cronológica de intervenciones selvícolas y proyecciones de crecimiento planificada para alcanzar objetivos definidos en una masa forestal concreta (Vázquez-Veloso, 2026).</li>
+<li><strong>Gestión forestal sostenible (<em>Sustainable forest management</em>):</strong> Administración y uso de los bosques a una tasa que mantenga su biodiversidad, productividad, capacidad de regeneración y vitalidad para cumplir funciones ecológicas, económicas y sociales sin causar daños a otros ecosistemas (MCPFE, 1993, in Pretzsch, 2009).</li>
+<li><strong>Inventario forestal (<em>Forest inventory</em>):</strong> Conjunto de métodos objetivos de muestreo diseñados para cuantificar la distribución espacial, composición y tasas de cambio de los parámetros del bosque con niveles de precisión especificados para fines de gestión (Helms, 1998).</li>
+<li><strong>Modelización forestal (<em>Forest modeling</em>):</strong> Aplicación científica de marcos matemáticos, estadísticos y computacionales para representar y predecir la dinámica, estructura y funciones de los ecosistemas forestales (Vázquez-Veloso, 2026).</li>
+<li><strong>Modelo (<em>Model</em>):</strong> Representación abstracta de objetos y sucesos del mundo real con el propósito de simular un proceso, predecir un resultado o caracterizar un fenómeno. En SIMANFOR se refiere específicamente a modelos cuantitativos basados en relaciones y ecuaciones matemáticas (Helms, 1998).</li>
+<li><strong>Modelo de crecimiento y producción (<em>Growth and yield model</em>):</strong> Conjunto de relaciones matemáticas implementadas en un programa informático que proporciona estimaciones del desarrollo futuro de una masa a partir de condiciones iniciales conocidas y un régimen de gestión especificado (Helms, 1998).</li>
+<li><strong>Parametrización (<em>Parameterization</em>):</strong> Proceso de asignación de valores numéricos (coeficientes) a los parámetros de un modelo para representar condiciones ecológicas concretas. Mientras que la estructura abstracta del modelo se mantiene fija, los parámetros deben calibrarse para reflejar especies, provincias, calidades de estación o contextos climáticos específicos (Vázquez-Veloso, 2026).</li>
+<li><strong>Selvicultura (<em>Silviculture</em>):</strong> Teoría y práctica que regula el establecimiento, desarrollo, composición, salud, calidad, aprovechamiento y regeneración de las masas forestales, para satisfacer las diversas necesidades de la sociedad de manera continua y sostenible (Serrada et al., 2008).</li>
+<li><strong>Simulador (<em>Simulator</em>):</strong> Herramienta digital que calcula resultados para un modelo utilizando una muestra de escenarios representativos. En el ámbito de apoyo a la decisión se orienta a la simplificación, automatización y visualización del modelo (<a href="https://doi.org/10.5424/fs/201019S-9310">Muys et al., 2010</a>).</li>
+<li><strong>Sistema de Apoyo a la Toma de Decisiones (<em>Decision Support System</em>, DSS):</strong> Herramienta diseñada para apoyar la resolución de problemas de decisión mal estructurados mediante la integración de una interfaz de usuario, un motor de simulación, reglas expertas, preferencias de las partes interesadas, gestión de bases de datos y algoritmos de optimización (Helms, 1998).</li>
+</ul>
+<h3 id="referencias-bibliograficas">Referencias bibliográficas</h3>
+<ul>
+<li><strong>Helms, J.A. (1998).</strong> <em>The Dictionary of Forestry</em>. Society of American Foresters, Bethesda, MD.</li>
+<li><strong>MCPFE (1993).</strong> Resolution H1: General guidelines for the sustainable management of forests in Europe. En: <em>Second Ministerial Conference on the Protection of Forests in Europe</em>, Helsinki, pp. 16–17.</li>
+<li><strong>Muys, B., Hynynen, J., Palahi, M., Lexer, M.J., Fabrika, M., Pretzsch, H., Gillet, F., Briceño, E., Nabuurs, G.-J., Kint, V. (2010).</strong> Simulation tools for decision support to adaptive forest management in Europe. <em>Forest Systems</em>, 19(SI), 86–99. <a href="https://doi.org/10.5424/fs/201019S-9310">https://doi.org/10.5424/fs/201019S-9310</a></li>
+<li><strong>Pretzsch, H. (2009).</strong> <em>Forest Dynamics, Growth and Yield: From Measurement to Model</em>. Springer-Verlag, Berlin Heidelberg.</li>
+<li><strong>Serrada, R., Montero, G., Reque, J.A. (2008).</strong> <em>Compendio de selvicultura aplicada en España</em>. Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria (INIA), Madrid.</li>
+<li><strong>Vázquez-Veloso, A. (2026).</strong> <em>Análisis de la dinámica forestal en un contexto de cambio</em> (Tesis doctoral). Universidad de Valladolid, Palencia. <a href="https://doi.org/10.13140/RG.2.2.15148.42885">https://doi.org/10.13140/RG.2.2.15148.42885</a></li>
+</ul>
+<hr />
+<h2 id="tipos-de-modelos-forestales-en-simanfor">Tipos de modelos forestales en SIMANFOR</h2>
+<p>El catálogo de modelos de SIMANFOR abarca diferentes escalas y metodologías dasométricas:</p>
+<p><img alt="Tipos de modelos forestales en SIMANFOR" src="../images/simanfor_models_taxonomy_whiteboard.svg" /></p>
+<h3 id="1-segun-la-unidad-minima-de-trabajo">1. Según la unidad mínima de trabajo</h3>
+<ul>
+<li><strong>Modelos de árbol individual:</strong> La unidad básica de cálculo es cada árbol muestreado en la parcela. El modelo simula de forma individual el crecimiento diamétrico, el incremento en altura y la probabilidad de muerte de cada pie en función de su tamaño y su nivel de competencia con los árboles vecinos. Permiten obtener distribuciones diamétricas detalladas y clasificación comercial desagregada por productos de madera.</li>
+<li><strong>Modelos de masa (rodal):</strong> La unidad básica de trabajo es la parcela o el rodal completo. Los cálculos se realizan a partir de variables dasométricas sintéticas globales ($N$ pies/ha, área basimétrica $G$, altura dominante $Ho$, diámetro medio cuadrático $dg$, edad de la masa e índice de sitio). Están indicados para masas coetáneas regulares o cuando no se dispone de inventarios pie a pie.</li>
+</ul>
+<h3 id="2-segun-la-posicion-espacial-de-los-arboles">2. Según la posición espacial de los árboles</h3>
+<ul>
+<li><strong>Modelos independientes de la distancia:</strong> No requieren conocer las coordenadas espaciales ($x, y$) de los árboles en la parcela. Asumen un espaciamiento homogéneo o calculan la presión competitiva mediante índices basados en dimensiones relativas (como el área basimétrica de los árboles mayores, $BAL$, o el cociente de diámetros $d/dg$). La gran mayoría de los modelos de árbol de SIMANFOR son independientes de la distancia, lo que abarata y agiliza la toma de datos en inventarios estándar.</li>
+<li><strong>Modelos dependientes de la distancia:</strong> Exigen el mapeo espacial preciso de cada pie para calcular conos o radios de competencia interindividual. Aunque SIMANFOR está preparado arquitectónicamente para albergarlos, requieren inventarios con posicionamiento explícito.</li>
+</ul>
+<h3 id="3-segun-la-composicion-de-especies-de-la-masa">3. Según la composición de especies de la masa</h3>
+<ul>
+<li><strong>Modelos para masas puras:</strong> Parametrizados para simular masas monoespecíficas o donde una única especie representa la práctica totalidad del dosel (ej. modelos dedicados para <em>Pinus sylvestris</em>, <em>Pinus pinaster</em> o <em>Pinus nigra</em>).</li>
+<li><strong>Modelos para masas mixtas:</strong> Parametrizados para simular la coexistencia de dos o más especies en el mismo rodal, modelizando cómo la interacción competitiva interespecífica modifica el crecimiento y la mortalidad respecto al comportamiento en masa pura (ej. combinaciones binarias del IFN para mezclas de pino y roble).</li>
+</ul>
+<h3 id="4-segun-su-capacidad-de-proyeccion-en-el-tiempo">4. Según su capacidad de proyección en el tiempo</h3>
+<ul>
+<li><strong>Modelos estáticos:</strong> No proyectan el crecimiento de la masa hacia el futuro. Su función es calcular con precisión existencias instantáneas, cubicación de volúmenes, tarifas, biomasa o relaciones alométricas en el momento en que se tomó el inventario ($t = 0$).</li>
+<li><strong>Modelos dinámicos:</strong> Permiten proyectar la evolución futura de la masa a lo largo de ciclos temporales sucesivos, simulando las tres funciones biológicas del rodal: crecimiento de los árboles supervivientes, mortalidad natural y masa incorporada (<em>ingrowth</em>).</li>
+</ul>
+<h3 id="5-el-papel-de-la-parametrizacion-local">5. El papel de la parametrización local</h3>
+<p>Un mismo modelo de crecimiento y producción (misma estructura matemática y secuencia de cálculo) puede calibrarse para distintas condiciones según la especie botánica, la región geográfica o la calidad de estación. Por ejemplo, los modelos IBERO (<em>IBEROPT</em> e <em>IBEROPS</em>) disponen de parametrizaciones específicas para <em>Pinus pinaster</em> y <em>Pinus sylvestris</em>, así como diferentes adaptaciones regionales en función de la procedencia y ecología de las masas.</p>
+<hr />
+<h2 id="operaciones-y-tratamientos-selvicolas-soportados">Operaciones y tratamientos selvícolas soportados</h2>
+<p>Dentro de un escenario selvícola en SIMANFOR, el usuario puede programar dos grandes tipos de eventos secuenciales:</p>
+<h3 id="1-proyecciones-de-crecimiento-execution">1. Proyecciones de crecimiento (<code>EXECUTION</code>)</h3>
+<ul>
+<li>Hacen avanzar el reloj biológico de la simulación durante un período de tiempo determinado (<code>time</code>).</li>
+<li>El simulador aplica las ecuaciones del modelo para calcular el incremento en diámetro y altura de cada árbol o el crecimiento medio del rodal, así como las pérdidas por mortalidad natural.</li>
+<li>Cada modelo forestal tiene definido un paso de proyección recomendado (habitualmente ciclos de 5 o 10 años, vinculados a la periodicidad de los inventarios con los que fue calibrado).</li>
+</ul>
+<h3 id="2-cortas-y-tratamientos-selvicolas-harvest">2. Cortas y tratamientos selvícolas (<code>HARVEST</code>)</h3>
+<ul>
+<li>Extraen una fracción del arbolado de la masa simulando una intervención de clara, clareo o corta final.</li>
+<li>En cada intervención, el usuario define tres parámetros dasométricos fundamentales:</li>
+<li><strong>Tipo de corta:</strong><ul>
+<li><em>Clara por lo bajo (thinning from below):</em> Se extraen preferentemente los árboles dominados y de clases diamétricas inferiores.</li>
+<li><em>Clara por lo alto (thinning from above):</em> Se extraen árboles del estrato dominante o codominante para favorecer a los mejores pies de porvenir.</li>
+<li><em>Clara sistemática:</em> Extracción homogénea o mecánica a lo largo de todo el espectro diamétrico sin sesgo de selección.</li>
+<li><em>Cortas selectivas por especies:</em> Intervenciones diferenciadas dirigidas a una especie concreta en masas mixtas.</li>
+<li><em>Cortas con árboles de futuro:</em> Selecciona un porcentaje del arbolado de mayor tamaño de cara a preservarlos en la masa (sin cortarlos) y eliminar su competencia.</li>
+</ul>
+</li>
+<li><strong>Criterio dasométrico de extracción:</strong> La intensidad puede medirse en número de pies ($N$), área basimétrica ($G$) o volumen ($V$).</li>
+<li><strong>Intensidad de extracción:</strong> Porcentaje de masa a retirar respecto a las existencias presentes antes de la intervención (ej. reducir un 25% del área basimétrica).</li>
+</ul>
+<hr />
+<h2 id="tratamientos-y-actividades-no-disponibles-actualmente">Tratamientos y actividades no disponibles actualmente</h2>
+<p>Para evitar expectativas erróneas al planificar simulaciones, es importante listar qué tratamientos selvícolas <strong>no forman parte</strong> de las operaciones actuales de SIMANFOR:</p>
+<ul>
+<li><strong>Podas forestales:</strong> No se modelizan podas de ningún tipo.</li>
+<li><strong>Fertilización y enmiendas de suelo:</strong> No existen módulos de cálculo que alteren las tasas de crecimiento por aportes nutricionales.</li>
+<li><strong>Aprovechamientos no maderables basados en descorche o resinación:</strong> Si bien el simulador calcula existencias de biomasa, carbono, piñón y hongos micorrícicos asociados a la estructura de la masa, no dispone de módulos de producción de resina ni descorche de alcornoque.</li>
+<li><strong>Preparación del suelo y laboreos mecánicos.</strong></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Fundamento de las operaciones no disponibles</p>
+<p>En selvicultura cuantitativa, un simulador solo puede ejecutar una actividad si dispone de un modelo matemático previo que cuantifique con base empírica cómo esa intervención altera la función de crecimiento, la alometría del árbol y su probabilidad de supervivencia. La arquitectura modular de SIMANFOR está preparada para incorporar cualquiera de estos tratamientos en el futuro en cuanto la comunidad científica desarrolle y valide las ecuaciones correspondientes. Si quieres implementar algún modelo o regla para su estimación, contáctanos en <em>simanfor.forest@uva.es</em>.</p>
+</div>
+<hr />
+<h2 id="glosario-dasometrico-rapido-y-fuentes-de-consulta">Glosario dasométrico rápido y fuentes de consulta</h2>
+<p>A continuación se resumen las variables dasométricas más comunes empleadas en los inventarios y en los libros de resultados de SIMANFOR:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Denominación dasométrica</th>
+<th style="text-align: left;">Unidad</th>
+<th style="text-align: left;">Definición operativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>$N$</strong></td>
+<td style="text-align: left;">Densidad de la masa</td>
+<td style="text-align: left;">pies/ha</td>
+<td style="text-align: left;">Número de árboles por hectárea presentes en la masa.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>$G$</strong></td>
+<td style="text-align: left;">Área basimétrica</td>
+<td style="text-align: left;">m²/ha</td>
+<td style="text-align: left;">Suma de las secciones transversales de los troncos medidas a la altura normal (1,30 m) por unidad de superficie.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>$Ho$</strong></td>
+<td style="text-align: left;">Altura dominante</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Altura media de los 100 árboles más gruesos por hectárea (criterio de Assmann). Indicador clave de la calidad de estación.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>$dg$</strong></td>
+<td style="text-align: left;">Diámetro medio cuadrático</td>
+<td style="text-align: left;">cm</td>
+<td style="text-align: left;">Diámetro correspondiente al árbol de sección basimétrica media en la masa: $dg = \sqrt{\frac{40000 \cdot G}{\pi \cdot N}}$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>$V$</strong></td>
+<td style="text-align: left;">Volumen maderable</td>
+<td style="text-align: left;">m³/ha</td>
+<td style="text-align: left;">Volumen de fuste con corteza ($Vcc$) o sin corteza ($Vsc$) estimado mediante tarifas o modelos de cubicación.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>$dbh$</strong></td>
+<td style="text-align: left;">Diámetro normal (árbol individual)</td>
+<td style="text-align: left;">cm</td>
+<td style="text-align: left;">Diámetro del tronco medido a 1,30 m sobre el nivel del suelo (<em>diameter at breast height</em>). Variable fundamental de inventario.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>$h$</strong></td>
+<td style="text-align: left;">Altura total (árbol individual)</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Distancia vertical desde la base del tronco hasta el ápice de la copa. Si no se mide en campo, se imputa mediante submodelos $h/d$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>$expan$</strong></td>
+<td style="text-align: left;">Factor de expansión</td>
+<td style="text-align: left;">adimensional</td>
+<td style="text-align: left;">Número de árboles por hectárea que representa cada pie medido en la parcela de inventario.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fuentes-de-referencia-externa-recomendadas">Fuentes de referencia externa recomendadas</h3>
+<p>Para profundizar en la terminología forestal, se recomienda consultar las siguientes obras de referencia:</p>
+<ul>
+<li><a href="https://secforestales.org/diccionario_forestal_secf">Diccionario Forestal de la Sociedad Española de Ciencias Forestales (SECF)</a>: Referencia terminológica oficial para el ámbito forestal hispanohablante.</li>
+<li><a href="https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/inventario-forestal-nacional.html">Inventario Forestal Nacional (MITECO)</a>: Metodología oficial de muestreo, diseño de parcelas concéntricas y cubicación en España.</li>
+<li><em>Compendio de selvicultura aplicada en España</em> (Serrada et al., 2008): Manual de referencia para la tipificación de regímenes selvícolas y tratamientos de masas ibéricas.</li>
+</ul>
+<hr />
+<h2 id="siguientes-pasos-recomendados">Siguientes pasos recomendados</h2>
+<p>Una vez asimilados los conceptos clave del flujo de simulación, puedes continuar explorando la plataforma a través de las siguientes secciones:</p>
+<ul>
+<li><a href="../03_vias_de_uso/">Vías de uso de la plataforma</a>: Conoce las alternativas de ejecución y elige la más adecuada según tu perfil técnico.</li>
+<li><a href="../../models/01_index/">Catálogo de modelos forestales</a>: Explora las fichas técnicas, especies y ecuaciones disponibles para simular.</li>
+<li><a href="../../scenarios/01_scenarios/">Guía de escenarios selvícolas</a>: Aprende a programar proyecciones y tratamientos selvícolas en detalle.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
