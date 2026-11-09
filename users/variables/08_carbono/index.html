@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../assets/simanfor_tree.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#contenido-de-carbono" class="md-skip">
+        <a href="#contenido-de-carbono-y-dioxido-de-carbono-equivalente" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -3091,8 +3091,8 @@
 
 
 
-<h1 id="contenido-de-carbono">Contenido de carbono</h1>
-<p>Variables de fijación y almacenamiento de carbono en las diferentes fracciones arbóreas y a nivel de rodal.</p>
+<h1 id="contenido-de-carbono-y-dioxido-de-carbono-equivalente">Contenido de carbono y dióxido de carbono equivalente</h1>
+<p>Variables de fijación y almacenamiento de carbono en las fracciones arbóreas y a escala de rodal, calculadas a partir de fracciones de carbono específicas por especie (Montero et al. 2005 por defecto, Castaño-Santamaría et al. 2012 para especies de <em>Quercus</em> con aditividad garantizada). Incluye la estimación automática del equivalente en dióxido de carbono ($\text{CO}_{2\text{eq}}$) mediante el factor de conversión estequiométrico del IPCC ($44/12$).</p>
 <h2 id="variables-de-parcela">Variables de parcela</h2>
 <ul>
 <li>
@@ -3150,6 +3150,33 @@
 <p><strong>Desglose en simulación:</strong> Esta variable se desagrega automáticamente para cada especie objetivo de la masa (<code>C_total_SP1</code>, <code>C_total_SP2</code>, <code>C_total_SP3</code>).</p>
 </blockquote>
 </li>
+<li>
+<p><strong><code>CO2_aereo</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>t/ha</code> &nbsp;•&nbsp; <code>multi-especie: sp1, sp2, sp3</code></p>
+<p>Dióxido de carbono equivalente acumulado en la biomasa aérea (IPCC: 44/12 * C).</p>
+<p><em>Nombres aceptados en el inventario:</em> <code>CO2_aboveground</code></p>
+<blockquote>
+<p><strong>Desglose en simulación:</strong> Esta variable se desagrega automáticamente para cada especie objetivo de la masa (<code>CO2_aereo_SP1</code>, <code>CO2_aereo_SP2</code>, <code>CO2_aereo_SP3</code>).</p>
+</blockquote>
+<p><em>Referencia:</em> Montero et al. (2005). <em>Producción de biomasa y fijación de CO2 por los bosques españoles</em>. <em>Monografías INIA: Serie Forestal no, 13</em>. (<a href="https://gregoriomontero.files.wordpress.com/2016/09/2005-01-monografc3ada-forestal-13-m-produccic3b3n-de-biomasa-y-fijacic3b3n-de-co2-por-los-bosques-espac3b1oles.pdf">Enlace</a>)</p>
+</li>
+<li>
+<p><strong><code>CO2_raices</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>t/ha</code> &nbsp;•&nbsp; <code>multi-especie: sp1, sp2, sp3</code></p>
+<p>Dióxido de carbono equivalente acumulado en la biomasa subterránea (IPCC: 44/12 * C).</p>
+<p><em>Nombres aceptados en el inventario:</em> <code>CO2_belowground</code></p>
+<blockquote>
+<p><strong>Desglose en simulación:</strong> Esta variable se desagrega automáticamente para cada especie objetivo de la masa (<code>CO2_raices_SP1</code>, <code>CO2_raices_SP2</code>, <code>CO2_raices_SP3</code>).</p>
+</blockquote>
+<p><em>Referencia:</em> Montero et al. (2005). <em>Producción de biomasa y fijación de CO2 por los bosques españoles</em>. <em>Monografías INIA: Serie Forestal no, 13</em>. (<a href="https://gregoriomontero.files.wordpress.com/2016/09/2005-01-monografc3ada-forestal-13-m-produccic3b3n-de-biomasa-y-fijacic3b3n-de-co2-por-los-bosques-espac3b1oles.pdf">Enlace</a>)</p>
+</li>
+<li>
+<p><strong><code>CO2_total</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>t/ha</code> &nbsp;•&nbsp; <code>multi-especie: sp1, sp2, sp3</code></p>
+<p>Dióxido de carbono equivalente total acumulado en la biomasa (IPCC: 44/12 * C).</p>
+<p><em>Nombres aceptados en el inventario:</em> <code>CO2_total</code></p>
+<blockquote>
+<p><strong>Desglose en simulación:</strong> Esta variable se desagrega automáticamente para cada especie objetivo de la masa (<code>CO2_total_SP1</code>, <code>CO2_total_SP2</code>, <code>CO2_total_SP3</code>).</p>
+</blockquote>
+<p><em>Referencia:</em> Montero et al. (2005). <em>Producción de biomasa y fijación de CO2 por los bosques españoles</em>. <em>Monografías INIA: Serie Forestal no, 13</em>. (<a href="https://gregoriomontero.files.wordpress.com/2016/09/2005-01-monografc3ada-forestal-13-m-produccic3b3n-de-biomasa-y-fijacic3b3n-de-co2-por-los-bosques-espac3b1oles.pdf">Enlace</a>)</p>
+</li>
 </ul>
 <hr />
 <h2 id="variables-de-arbol">Variables de árbol</h2>
@@ -3193,6 +3220,24 @@
 <p><strong><code>c_total</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>kg</code></p>
 <p>Contenido total de carbono acumulado en todos los componentes del árbol.</p>
 <p><em>Nombres aceptados en el inventario:</em> <code>c_total</code></p>
+</li>
+<li>
+<p><strong><code>co2_aereo</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>kg</code></p>
+<p>Dióxido de carbono equivalente acumulado en la biomasa aérea del árbol.</p>
+<p><em>Nombres aceptados en el inventario:</em> <code>co2_aboveground</code></p>
+<p><em>Referencia:</em> Montero et al. (2005). <em>Producción de biomasa y fijación de CO2 por los bosques españoles</em>. <em>Monografías INIA: Serie Forestal no, 13</em>. (<a href="https://gregoriomontero.files.wordpress.com/2016/09/2005-01-monografc3ada-forestal-13-m-produccic3b3n-de-biomasa-y-fijacic3b3n-de-co2-por-los-bosques-espac3b1oles.pdf">Enlace</a>)</p>
+</li>
+<li>
+<p><strong><code>co2_raices</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>kg</code></p>
+<p>Dióxido de carbono equivalente acumulado en la biomasa subterránea del árbol.</p>
+<p><em>Nombres aceptados en el inventario:</em> <code>co2_belowground</code></p>
+<p><em>Referencia:</em> Montero et al. (2005). <em>Producción de biomasa y fijación de CO2 por los bosques españoles</em>. <em>Monografías INIA: Serie Forestal no, 13</em>. (<a href="https://gregoriomontero.files.wordpress.com/2016/09/2005-01-monografc3ada-forestal-13-m-produccic3b3n-de-biomasa-y-fijacic3b3n-de-co2-por-los-bosques-espac3b1oles.pdf">Enlace</a>)</p>
+</li>
+<li>
+<p><strong><code>co2_total</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>kg</code></p>
+<p>Dióxido de carbono equivalente total acumulado en el árbol.</p>
+<p><em>Nombres aceptados en el inventario:</em> <code>co2_total</code></p>
+<p><em>Referencia:</em> Montero et al. (2005). <em>Producción de biomasa y fijación de CO2 por los bosques españoles</em>. <em>Monografías INIA: Serie Forestal no, 13</em>. (<a href="https://gregoriomontero.files.wordpress.com/2016/09/2005-01-monografc3ada-forestal-13-m-produccic3b3n-de-biomasa-y-fijacic3b3n-de-co2-por-los-bosques-espac3b1oles.pdf">Enlace</a>)</p>
 </li>
 </ul>
 
@@ -3251,7 +3296,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>

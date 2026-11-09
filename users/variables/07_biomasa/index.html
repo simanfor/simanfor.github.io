@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../assets/simanfor_tree.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -3092,7 +3092,7 @@
 
 
 <h1 id="biomasa-aerea-y-subterranea">Biomasa aérea y subterránea</h1>
-<p>Cuantificación de las fracciones de biomasa arbórea (madera de fuste, corteza, ramas gruesas, medianas y finas, hojas, tocones y raíces) en peso seco.</p>
+<p>Cuantificación de las fracciones de biomasa arbórea (madera de fuste, corteza, ramas gruesas, medianas y finas, hojas, tocones y raíces) en peso seco. SIMANFOR integra una arquitectura dual de estimación: modelos específicos para masas adultas ($dbh \ge 7.5$ cm) basados en publicaciones nacionales y regionales (Montero et al. 2005, Ruiz-Peinado et al. 2011/2012, Diéguez-Aranda et al. 2009, etc.) y un sistema adaptativo jerárquico por especie para repoblaciones y masas jóvenes ($dbh &lt; 7.5$ cm o presencia de $rcd$; Menéndez-Míguelez et al. 2022). Trazabilidad completa garantizada mediante <code>fuente_modelo_biomasa</code> (<code>biomass_model_source</code>).</p>
 <h2 id="variables-de-parcela">Variables de parcela</h2>
 <ul>
 <li>
@@ -3429,6 +3429,11 @@
 <p>Biomasa total del árbol, incluyendo todos los componentes.</p>
 <p><em>Nombres aceptados en el inventario:</em> <code>w_total</code></p>
 </li>
+<li>
+<p><strong><code>fuente_modelo_biomasa</code></strong> — <code>texto</code> &nbsp;•&nbsp; <code>sin unidades</code></p>
+<p>Referencia o publicación científica del modelo alométrico utilizado para estimar la biomasa del árbol.</p>
+<p><em>Nombres aceptados en el inventario:</em> <code>biomass_model_source</code></p>
+</li>
 </ul>
 
 
@@ -3486,7 +3491,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>

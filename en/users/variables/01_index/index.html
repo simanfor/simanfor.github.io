@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../../assets/simanfor_tree.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -3408,13 +3408,13 @@
 <tr>
 <td style="text-align: left;"><strong>Forest dimensions and growth metrics</strong></td>
 <td style="text-align: left;">Fundamental mensuration metrics measured and calculated at tree level (diameter at breast height, height, crown dimensions) and stand level (basal area, quadratic mean diameter, dominant height).</td>
-<td style="text-align: center;">35</td>
+<td style="text-align: center;">36</td>
 <td style="text-align: left;"><a href="../04_dimensiones/">View variables</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Timber volume</strong></td>
 <td style="text-align: left;">Estimates of stem wood volume over and under bark, bark volume, and standard National Forest Inventory tariff models for both individual trees and per-hectare aggregates.</td>
-<td style="text-align: center;">16</td>
+<td style="text-align: center;">17</td>
 <td style="text-align: left;"><a href="../05_volumen/">View variables</a></td>
 </tr>
 <tr>
@@ -3425,14 +3425,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Aboveground and belowground biomass</strong></td>
-<td style="text-align: left;">Quantification of tree biomass fractions (stem wood, bark, thick, medium, and fine branches, foliage, stumps, and root systems) in dry weight.</td>
-<td style="text-align: center;">54</td>
+<td style="text-align: left;">Quantification of tree biomass fractions (stem wood, bark, thick, medium, and fine branches, foliage, stumps, and root systems) in dry weight. SIMANFOR implements a dual-tier estimation architecture: species-specific models for adult stands ($dbh \ge 7.5$ cm) from national and regional literature (Montero et al. 2005, Ruiz-Peinado et al. 2011/2012, Diéguez-Aranda et al. 2009, etc.), and an adaptive hierarchical species-level system for young stands and reforestations ($dbh &lt; 7.5$ cm or root collar diameter $rcd$ present; Menéndez-Míguelez et al. 2022). Full traceability is guaranteed through <code>biomass_model_source</code>.</td>
+<td style="text-align: center;">55</td>
 <td style="text-align: left;"><a href="../07_biomasa/">View variables</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Carbon stock</strong></td>
-<td style="text-align: left;">Carbon fixation and stock metrics across different tree pools and at stand level.</td>
-<td style="text-align: center;">16</td>
+<td style="text-align: left;"><strong>Carbon stock and equivalent carbon dioxide</strong></td>
+<td style="text-align: left;">Carbon fixation and stock metrics across tree components and at stand level, computed using species-specific carbon fractions (Montero et al. 2005 by default, Castaño-Santamaría et al. 2012 for <em>Quercus</em> species with ensured additive consistency). Includes automated equivalent carbon dioxide ($\text{CO}_{2\text{eq}}$) estimation via the official IPCC stoichiometric ratio ($44/12$).</td>
+<td style="text-align: center;">22</td>
 <td style="text-align: left;"><a href="../08_carbono/">View variables</a></td>
 </tr>
 <tr>
@@ -3542,7 +3542,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>

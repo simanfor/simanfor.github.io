@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../assets/simanfor_tree.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -3406,13 +3406,13 @@
 <tr>
 <td style="text-align: left;"><strong>Dimensiones dasométricas y crecimiento</strong></td>
 <td style="text-align: left;">Variables dasométricas fundamentales medidas y calculadas a nivel de árbol (diámetro normal, altura, dimensiones de copa) y de masa (área basimétrica, diámetro medio cuadrático, altura dominante).</td>
-<td style="text-align: center;">35</td>
+<td style="text-align: center;">36</td>
 <td style="text-align: left;"><a href="../04_dimensiones/">Ver variables</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Volumen de madera</strong></td>
 <td style="text-align: left;">Estimaciones del volumen de madera de fuste con y sin corteza, volumen de corteza y tarifas estándar del Inventario Forestal Nacional (IFN) tanto para árboles individuales como por hectárea.</td>
-<td style="text-align: center;">16</td>
+<td style="text-align: center;">17</td>
 <td style="text-align: left;"><a href="../05_volumen/">Ver variables</a></td>
 </tr>
 <tr>
@@ -3423,14 +3423,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Biomasa aérea y subterránea</strong></td>
-<td style="text-align: left;">Cuantificación de las fracciones de biomasa arbórea (madera de fuste, corteza, ramas gruesas, medianas y finas, hojas, tocones y raíces) en peso seco.</td>
-<td style="text-align: center;">54</td>
+<td style="text-align: left;">Cuantificación de las fracciones de biomasa arbórea (madera de fuste, corteza, ramas gruesas, medianas y finas, hojas, tocones y raíces) en peso seco. SIMANFOR integra una arquitectura dual de estimación: modelos específicos para masas adultas ($dbh \ge 7.5$ cm) basados en publicaciones nacionales y regionales (Montero et al. 2005, Ruiz-Peinado et al. 2011/2012, Diéguez-Aranda et al. 2009, etc.) y un sistema adaptativo jerárquico por especie para repoblaciones y masas jóvenes ($dbh &lt; 7.5$ cm o presencia de $rcd$; Menéndez-Míguelez et al. 2022). Trazabilidad completa garantizada mediante <code>fuente_modelo_biomasa</code> (<code>biomass_model_source</code>).</td>
+<td style="text-align: center;">55</td>
 <td style="text-align: left;"><a href="../07_biomasa/">Ver variables</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenido de carbono</strong></td>
-<td style="text-align: left;">Variables de fijación y almacenamiento de carbono en las diferentes fracciones arbóreas y a nivel de rodal.</td>
-<td style="text-align: center;">16</td>
+<td style="text-align: left;"><strong>Contenido de carbono y dióxido de carbono equivalente</strong></td>
+<td style="text-align: left;">Variables de fijación y almacenamiento de carbono en las fracciones arbóreas y a escala de rodal, calculadas a partir de fracciones de carbono específicas por especie (Montero et al. 2005 por defecto, Castaño-Santamaría et al. 2012 para especies de <em>Quercus</em> con aditividad garantizada). Incluye la estimación automática del equivalente en dióxido de carbono ($\text{CO}_{2\text{eq}}$) mediante el factor de conversión estequiométrico del IPCC ($44/12$).</td>
+<td style="text-align: center;">22</td>
 <td style="text-align: left;"><a href="../08_carbono/">Ver variables</a></td>
 </tr>
 <tr>
@@ -3539,7 +3539,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>

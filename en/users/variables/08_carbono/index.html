@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../../assets/simanfor_tree.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#carbon-stock" class="md-skip">
+        <a href="#carbon-stock-and-equivalent-carbon-dioxide" class="md-skip">
           Skip to content
         </a>
       
@@ -3093,8 +3093,8 @@
 
 
 
-<h1 id="carbon-stock">Carbon stock</h1>
-<p>Carbon fixation and stock metrics across different tree pools and at stand level.</p>
+<h1 id="carbon-stock-and-equivalent-carbon-dioxide">Carbon stock and equivalent carbon dioxide</h1>
+<p>Carbon fixation and stock metrics across tree components and at stand level, computed using species-specific carbon fractions (Montero et al. 2005 by default, Castaño-Santamaría et al. 2012 for <em>Quercus</em> species with ensured additive consistency). Includes automated equivalent carbon dioxide ($\text{CO}_{2\text{eq}}$) estimation via the official IPCC stoichiometric ratio ($44/12$).</p>
 <h2 id="plot-level-variables">Plot-level variables</h2>
 <ul>
 <li>
@@ -3152,6 +3152,33 @@
 <p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>C_total_SP1</code>, <code>C_total_SP2</code>, <code>C_total_SP3</code>).</p>
 </blockquote>
 </li>
+<li>
+<p><strong><code>CO2_aboveground</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>t/ha</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Equivalent carbon dioxide stored in aboveground biomass (IPCC: 44/12 * C).</p>
+<p><em>Accepted names in inventory:</em> <code>CO2_aereo</code></p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>CO2_aboveground_SP1</code>, <code>CO2_aboveground_SP2</code>, <code>CO2_aboveground_SP3</code>).</p>
+</blockquote>
+<p><em>Reference:</em> Montero et al. (2005). <em>Producción de biomasa y fijación de CO2 por los bosques españoles</em>. <em>Monografías INIA: Serie Forestal no, 13</em>. (<a href="https://gregoriomontero.files.wordpress.com/2016/09/2005-01-monografc3ada-forestal-13-m-produccic3b3n-de-biomasa-y-fijacic3b3n-de-co2-por-los-bosques-espac3b1oles.pdf">Link</a>)</p>
+</li>
+<li>
+<p><strong><code>CO2_belowground</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>t/ha</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Equivalent carbon dioxide stored in belowground biomass (IPCC: 44/12 * C).</p>
+<p><em>Accepted names in inventory:</em> <code>CO2_raices</code></p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>CO2_belowground_SP1</code>, <code>CO2_belowground_SP2</code>, <code>CO2_belowground_SP3</code>).</p>
+</blockquote>
+<p><em>Reference:</em> Montero et al. (2005). <em>Producción de biomasa y fijación de CO2 por los bosques españoles</em>. <em>Monografías INIA: Serie Forestal no, 13</em>. (<a href="https://gregoriomontero.files.wordpress.com/2016/09/2005-01-monografc3ada-forestal-13-m-produccic3b3n-de-biomasa-y-fijacic3b3n-de-co2-por-los-bosques-espac3b1oles.pdf">Link</a>)</p>
+</li>
+<li>
+<p><strong><code>CO2_total</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>t/ha</code> &nbsp;•&nbsp; <code>multi-species: sp1, sp2, sp3</code></p>
+<p>Total equivalent carbon dioxide stored across all biomass components (IPCC: 44/12 * C).</p>
+<p><em>Accepted names in inventory:</em> <code>CO2_total</code></p>
+<blockquote>
+<p><strong>Simulation breakdown:</strong> This variable is automatically expanded for each target stand species (<code>CO2_total_SP1</code>, <code>CO2_total_SP2</code>, <code>CO2_total_SP3</code>).</p>
+</blockquote>
+<p><em>Reference:</em> Montero et al. (2005). <em>Producción de biomasa y fijación de CO2 por los bosques españoles</em>. <em>Monografías INIA: Serie Forestal no, 13</em>. (<a href="https://gregoriomontero.files.wordpress.com/2016/09/2005-01-monografc3ada-forestal-13-m-produccic3b3n-de-biomasa-y-fijacic3b3n-de-co2-por-los-bosques-espac3b1oles.pdf">Link</a>)</p>
+</li>
 </ul>
 <hr />
 <h2 id="tree-level-variables">Tree-level variables</h2>
@@ -3195,6 +3222,24 @@
 <p><strong><code>c_total</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>kg</code></p>
 <p>Total carbon accumulated across all components of the tree.</p>
 <p><em>Accepted names in inventory:</em> <code>c_total</code></p>
+</li>
+<li>
+<p><strong><code>co2_aboveground</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>kg</code></p>
+<p>Equivalent carbon dioxide stored in tree aboveground biomass.</p>
+<p><em>Accepted names in inventory:</em> <code>co2_aereo</code></p>
+<p><em>Reference:</em> Montero et al. (2005). <em>Producción de biomasa y fijación de CO2 por los bosques españoles</em>. <em>Monografías INIA: Serie Forestal no, 13</em>. (<a href="https://gregoriomontero.files.wordpress.com/2016/09/2005-01-monografc3ada-forestal-13-m-produccic3b3n-de-biomasa-y-fijacic3b3n-de-co2-por-los-bosques-espac3b1oles.pdf">Link</a>)</p>
+</li>
+<li>
+<p><strong><code>co2_belowground</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>kg</code></p>
+<p>Equivalent carbon dioxide stored in tree belowground biomass.</p>
+<p><em>Accepted names in inventory:</em> <code>co2_raices</code></p>
+<p><em>Reference:</em> Montero et al. (2005). <em>Producción de biomasa y fijación de CO2 por los bosques españoles</em>. <em>Monografías INIA: Serie Forestal no, 13</em>. (<a href="https://gregoriomontero.files.wordpress.com/2016/09/2005-01-monografc3ada-forestal-13-m-produccic3b3n-de-biomasa-y-fijacic3b3n-de-co2-por-los-bosques-espac3b1oles.pdf">Link</a>)</p>
+</li>
+<li>
+<p><strong><code>co2_total</code></strong> — <code>decimal</code> &nbsp;•&nbsp; <code>kg</code></p>
+<p>Total equivalent carbon dioxide stored in the tree.</p>
+<p><em>Accepted names in inventory:</em> <code>co2_total</code></p>
+<p><em>Reference:</em> Montero et al. (2005). <em>Producción de biomasa y fijación de CO2 por los bosques españoles</em>. <em>Monografías INIA: Serie Forestal no, 13</em>. (<a href="https://gregoriomontero.files.wordpress.com/2016/09/2005-01-monografc3ada-forestal-13-m-produccic3b3n-de-biomasa-y-fijacic3b3n-de-co2-por-los-bosques-espac3b1oles.pdf">Link</a>)</p>
 </li>
 </ul>
 <p><em>Translated using AI translation assistant.</em></p>
@@ -3254,7 +3299,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>

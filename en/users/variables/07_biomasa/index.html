@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../../assets/simanfor_tree.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -3094,7 +3094,7 @@
 
 
 <h1 id="aboveground-and-belowground-biomass">Aboveground and belowground biomass</h1>
-<p>Quantification of tree biomass fractions (stem wood, bark, thick, medium, and fine branches, foliage, stumps, and root systems) in dry weight.</p>
+<p>Quantification of tree biomass fractions (stem wood, bark, thick, medium, and fine branches, foliage, stumps, and root systems) in dry weight. SIMANFOR implements a dual-tier estimation architecture: species-specific models for adult stands ($dbh \ge 7.5$ cm) from national and regional literature (Montero et al. 2005, Ruiz-Peinado et al. 2011/2012, Diéguez-Aranda et al. 2009, etc.), and an adaptive hierarchical species-level system for young stands and reforestations ($dbh &lt; 7.5$ cm or root collar diameter $rcd$ present; Menéndez-Míguelez et al. 2022). Full traceability is guaranteed through <code>biomass_model_source</code>.</p>
 <h2 id="plot-level-variables">Plot-level variables</h2>
 <ul>
 <li>
@@ -3431,6 +3431,11 @@
 <p>Total tree biomass of all components of the tree.</p>
 <p><em>Accepted names in inventory:</em> <code>w_total</code></p>
 </li>
+<li>
+<p><strong><code>biomass_model_source</code></strong> — <code>text</code> &nbsp;•&nbsp; <code>dimensionless</code></p>
+<p>Scientific reference or publication of the allometric model used to estimate the tree biomass.</p>
+<p><em>Accepted names in inventory:</em> <code>fuente_modelo_biomasa</code></p>
+</li>
 </ul>
 <p><em>Translated using AI translation assistant.</em></p>
 
@@ -3489,7 +3494,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>
