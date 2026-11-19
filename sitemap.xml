@@ -99,6 +99,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/users/models/stand/Cladanifer_stand__zam/"/>
     </url>
     <url>
+        <loc>https://simanfor.github.io/users/models/stand/Csativa_coppice_stand__Asturias/</loc>
+        <lastmod>2026-11-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/users/models/stand/Csativa_coppice_stand__Asturias/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/users/models/stand/Csativa_coppice_stand__Asturias/"/>
+    </url>
+    <url>
         <loc>https://simanfor.github.io/users/models/stand/Pmenziesii_stand__esp/</loc>
         <lastmod>2026-11-19</lastmod>
         <changefreq>daily</changefreq>
@@ -643,6 +650,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/users/models/stand/Cladanifer_stand__zam/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/users/models/stand/Cladanifer_stand__zam/"/>
+    </url>
+    <url>
+        <loc>https://simanfor.github.io/en/users/models/stand/Csativa_coppice_stand__Asturias/</loc>
+        <lastmod>2026-11-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simanfor.github.io/en/users/models/stand/Csativa_coppice_stand__Asturias/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simanfor.github.io/users/models/stand/Csativa_coppice_stand__Asturias/"/>
     </url>
     <url>
         <loc>https://simanfor.github.io/en/users/models/stand/Pmenziesii_stand__esp/</loc>
